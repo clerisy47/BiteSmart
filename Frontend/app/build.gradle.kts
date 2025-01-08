@@ -51,6 +51,10 @@ dependencies {
     implementation(libs.androidx.material3)
     //manual implementation
     implementation(libs.androidx.material)
+    implementation (libs.androidx.camera.core)
+    implementation (libs.androidx.camera.camera2)
+    implementation (libs.androidx.camera.view)
+    implementation (libs.androidx.camera.lifecycle)
 
 
     testImplementation(libs.junit)
