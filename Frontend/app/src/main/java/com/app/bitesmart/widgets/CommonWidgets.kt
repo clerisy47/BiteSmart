@@ -68,7 +68,7 @@ fun BottomAppBar() {
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun TopAppBar(){
+fun TopAppBar(title: String){
                 CenterAlignedTopAppBar(
                     colors = TopAppBarDefaults.centerAlignedTopAppBarColors(
                         containerColor = MaterialTheme.colorScheme.primaryContainer,
@@ -76,7 +76,7 @@ fun TopAppBar(){
                     ),
                     title = {
                         Text(
-                            "Food Scan",
+                            text = title,
                             maxLines = 1,
                             overflow = TextOverflow.Ellipsis,
                         )
