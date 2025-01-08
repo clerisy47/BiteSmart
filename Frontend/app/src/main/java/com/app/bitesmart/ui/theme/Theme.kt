@@ -37,7 +37,7 @@ private val LightColorScheme = lightColorScheme(
 fun BiteSmartTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
-    dynamicColor: Boolean = true,
+    dynamicColor: Boolean = false, // to show purple color variant instead of bluish in android phone
     content: @Composable () -> Unit
 ) {
     val colorScheme = when {
