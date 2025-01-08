@@ -11,6 +11,8 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Search
+import androidx.compose.material.icons.outlined.PhotoCamera
+import androidx.compose.material.icons.rounded.PhotoCamera
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -58,7 +60,7 @@ fun FoodScanScreen(modifier: Modifier = Modifier) {
                         .background(color = MaterialTheme.colorScheme.primaryContainer)
                 ) {
                     Icon(
-                        Icons.Filled.Search,
+                        Icons.Outlined.PhotoCamera   ,
                         contentDescription = "Camera Image",
                         modifier = Modifier.size(size = 40.dp)
                     )

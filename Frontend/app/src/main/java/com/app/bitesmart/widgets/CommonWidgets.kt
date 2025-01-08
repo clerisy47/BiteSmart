@@ -2,15 +2,14 @@ package com.app.bitesmart.widgets
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
-import androidx.compose.material.icons.filled.Search
-import androidx.compose.material.icons.filled.ShoppingCart
+import androidx.compose.material.icons.outlined.DocumentScanner
+import androidx.compose.material.icons.outlined.ShoppingBag
 import androidx.compose.material3.BottomAppBar
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -41,7 +40,7 @@ fun BottomAppBar() {
                     ) {
                         IconButton(onClick = { /* do something */ }) {
                             Icon(
-                                Icons.Filled.Search,
+                                Icons.Outlined.DocumentScanner,
                                 contentDescription = "Localized description"
                             )
                         }
@@ -57,7 +56,7 @@ fun BottomAppBar() {
                         }
                         IconButton(onClick = { /* do something */ }) {
                             Icon(
-                                Icons.Filled.ShoppingCart,
+                                Icons.Outlined.ShoppingBag,
                                 contentDescription = "Localized description",
                             )
                         }
@@ -97,6 +96,6 @@ fun TopAppBar(){
 @Preview
 @Composable
 fun WidgetPreview(){
-//    BottomAppBar()
-    TopAppBar()
+    BottomAppBar()
+//    TopAppBar()
 }
