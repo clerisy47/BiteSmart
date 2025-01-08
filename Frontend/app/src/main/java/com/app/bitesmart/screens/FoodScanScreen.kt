@@ -2,7 +2,10 @@ package com.app.bitesmart.screens
 
 
 import android.content.Context
+import android.graphics.BitmapFactory
 import androidx.camera.core.CameraSelector
+import androidx.camera.core.ImageCapture
+import androidx.camera.core.ImageCaptureException
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.camera.view.PreviewView
 import androidx.compose.foundation.background
@@ -35,13 +38,15 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.compose.LocalLifecycleOwner
+import com.app.bitesmart.viewModels.ImageViewModel
 import com.app.bitesmart.widgets.BottomAppBar
 import com.app.bitesmart.widgets.TopAppBar
+import java.io.File
 import kotlin.coroutines.resume
 import kotlin.coroutines.suspendCoroutine
 
 @Composable
-fun FoodScanScreen(modifier: Modifier = Modifier) {
+fun FoodScanScreen(modifier: Modifier = Modifier, viewModel: ImageViewModel) {
     val lensFacing = CameraSelector.LENS_FACING_BACK
     val lifecycleOwner = LocalLifecycleOwner.current
     val context = LocalContext.current
@@ -51,19 +56,22 @@ fun FoodScanScreen(modifier: Modifier = Modifier) {
     }
     // To use back camera only
     val cameraxSelector = CameraSelector.Builder().requireLensFacing(lensFacing).build()
+    val imageCapture = remember {
+        ImageCapture.Builder().build()
+    }
     LaunchedEffect(lensFacing) {
         //provides access to camera
         val cameraProvider = context.getCameraProvider()
         cameraProvider.unbindAll()
         //binds camera lifecycle to this composable
-        cameraProvider.bindToLifecycle(lifecycleOwner, cameraxSelector, preview)
+        cameraProvider.bindToLifecycle(lifecycleOwner, cameraxSelector, preview, imageCapture)
         //allows camera preview to be displayed on screen
         preview.surfaceProvider = previewView.surfaceProvider
 
     }
     Scaffold(
         modifier = modifier,
-        topBar = { TopAppBar() },
+        topBar = { TopAppBar(title = "Food Scan") },
         bottomBar = { BottomAppBar() }
     ) { innerPadding ->
         Surface(
@@ -98,7 +106,7 @@ fun FoodScanScreen(modifier: Modifier = Modifier) {
                 ) {
                     IconButton(
                         onClick = {
-                            //Todo: capture image
+                            captureImage(imageCapture, context, viewModel)
                         },
                         modifier = Modifier
                             .size(size = 60.dp)
@@ -158,8 +166,32 @@ private suspend fun Context.getCameraProvider(): ProcessCameraProvider =
         }
     }
 
+private fun captureImage(imageCapture: ImageCapture, context: Context, viewModel: ImageViewModel) {
+    val outputOptions = ImageCapture.OutputFileOptions.Builder(
+        File(context.cacheDir, "food_img.jpg")
+    ).build()
+
+    imageCapture.takePicture(
+        outputOptions,
+        ContextCompat.getMainExecutor(context),
+        object : ImageCapture.OnImageSavedCallback {
+            override fun onImageSaved(outputFileResults: ImageCapture.OutputFileResults) {
+                val bitmap = BitmapFactory.decodeFile(outputFileResults.savedUri?.path)
+                if (bitmap != null) {
+                    viewModel.addImage(bitmap) // Add the image to the ViewModel's list
+                }
+            }
+
+            override fun onError(exception: ImageCaptureException) {
+                println("Error capturing image: $exception")
+            }
+        }
+    )
+}
+
+
 @Preview
 @Composable
 fun FoodScanScreenPreview() {
-    FoodScanScreen()
+    FoodScanScreen(viewModel = ImageViewModel())
 }
