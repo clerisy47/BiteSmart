@@ -55,6 +55,16 @@ dependencies {
     implementation (libs.androidx.camera.camera2)
     implementation (libs.androidx.camera.view)
     implementation (libs.androidx.camera.lifecycle)
+    // To recognize Latin script
+    implementation(libs.text.recognition)
+    // To recognize Chinese script
+    implementation(libs.text.recognition.chinese)
+    // To recognize Devanagari script
+    implementation(libs.text.recognition.devanagari)
+    // To recognize Japanese script
+    implementation(libs.text.recognition.japanese)
+    // To recognize Korean script
+    implementation(libs.text.recognition.korean)
 
 
     testImplementation(libs.junit)
