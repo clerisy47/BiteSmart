@@ -21,6 +21,7 @@ class MainActivity : ComponentActivity() {
         registerForActivityResult(ActivityResultContracts.RequestPermission()) { isGranted ->
             if (isGranted) {
                 // Implement camera related  code
+                launchApp()
             } else {
                 // Camera permission denied
             }
@@ -33,6 +34,7 @@ class MainActivity : ComponentActivity() {
             PackageManager.PERMISSION_GRANTED -> {
                 // Camera permission already granted
                 // Implement camera-related code here
+                launchApp()
             }
             else -> {
                 // Camera permission not granted, request it
@@ -41,10 +43,11 @@ class MainActivity : ComponentActivity() {
         }
 
         enableEdgeToEdge()
-
+    }
+    private fun launchApp(){
         setContent {
             BiteSmartTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                Scaffold(modifier = Modifier.fillMaxSize()) { _ ->
                     //don't include innerPadding it disturbs the padding of topAppBar and ButtonAppBar
                     FoodScanScreen()
                 }
