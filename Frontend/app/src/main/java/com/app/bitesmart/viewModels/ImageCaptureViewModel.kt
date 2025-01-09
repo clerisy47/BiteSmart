@@ -1,12 +1,9 @@
 package com.app.bitesmart.viewModels
 
 import android.graphics.Bitmap
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 
-class ImageViewModel : ViewModel() {
+class ImageCaptureViewModel : ViewModel() {
     private val _images = mutableListOf<Bitmap>()
     val images: List<Bitmap> get() = _images
 

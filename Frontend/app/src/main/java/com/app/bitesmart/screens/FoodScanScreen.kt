@@ -2,10 +2,9 @@ package com.app.bitesmart.screens
 
 
 import android.content.Context
-import android.graphics.BitmapFactory
+import android.util.Log
 import androidx.camera.core.CameraSelector
 import androidx.camera.core.ImageCapture
-import androidx.camera.core.ImageCaptureException
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.camera.view.PreviewView
 import androidx.compose.foundation.background
@@ -27,6 +26,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -38,16 +38,18 @@ import androidx.core.content.ContextCompat
 import androidx.lifecycle.compose.LocalLifecycleOwner
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
+import com.app.bitesmart.domain.CaptureImageUseCase
+import com.app.bitesmart.domain.TextRecognitionUseCase
 import com.app.bitesmart.navigation.NavigationScreens
-import com.app.bitesmart.viewModels.ImageViewModel
+import com.app.bitesmart.viewModels.ImageCaptureViewModel
 import com.app.bitesmart.widgets.BottomAppBar
 import com.app.bitesmart.widgets.TopAppBar
-import java.io.File
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 import kotlin.coroutines.resume
 import kotlin.coroutines.suspendCoroutine
-
 @Composable
-fun FoodScanScreen(modifier: Modifier = Modifier, viewModel: ImageViewModel, navController: NavController) {
+fun FoodScanScreen(modifier: Modifier = Modifier, viewModel: ImageCaptureViewModel, navController: NavController) {
     val lensFacing = CameraSelector.LENS_FACING_BACK
     val lifecycleOwner = LocalLifecycleOwner.current
     val context = LocalContext.current
@@ -70,6 +72,7 @@ fun FoodScanScreen(modifier: Modifier = Modifier, viewModel: ImageViewModel, nav
         preview.surfaceProvider = previewView.surfaceProvider
 
     }
+    val scope = rememberCoroutineScope()
     Scaffold(
         modifier = modifier,
         topBar = { TopAppBar(title = "Food Scan") },
@@ -122,8 +125,26 @@ fun FoodScanScreen(modifier: Modifier = Modifier, viewModel: ImageViewModel, nav
 //                    }
                     IconButton(
                         onClick = {
-                            //Todo: capture image
-                            navController.navigate(route = NavigationScreens.IngredientsScreen.name)
+                            //Todo: capture image, recognize text and navigate
+                            // Add a delay before starting text recognition to ensure the image is saved
+                            // Capture the image
+                            CaptureImageUseCase.captureImage(imageCapture, context, viewModel)
+
+                            scope.launch {
+                                // Introducing a delay (e.g., 2 seconds) before continuing
+                                delay(2000) // Delay for 2 seconds
+
+                                // Ensure that the image is available before executing text recognition
+                                val latestImage = viewModel.getLatestImage()
+                                if (latestImage != null) {
+                                    TextRecognitionUseCase.execute(latestImage)
+                                } else {
+                                    Log.d("CaptureImage", "Image not ready yet")
+                                }
+
+                                // Navigate to the Ingredients screen after text recognition
+                                navController.navigate(route = NavigationScreens.IngredientsScreen.name)
+                            }
                         },
                         modifier = Modifier
                             .size(size = 80.dp)
@@ -168,33 +189,11 @@ private suspend fun Context.getCameraProvider(): ProcessCameraProvider =
         }
     }
 
-private fun captureImage(imageCapture: ImageCapture, context: Context, viewModel: ImageViewModel) {
-    val outputOptions = ImageCapture.OutputFileOptions.Builder(
-        File(context.cacheDir, "food_img.jpg")
-    ).build()
-
-    imageCapture.takePicture(
-        outputOptions,
-        ContextCompat.getMainExecutor(context),
-        object : ImageCapture.OnImageSavedCallback {
-            override fun onImageSaved(outputFileResults: ImageCapture.OutputFileResults) {
-                val bitmap = BitmapFactory.decodeFile(outputFileResults.savedUri?.path)
-                if (bitmap != null) {
-                    viewModel.addImage(bitmap) // Add the image to the ViewModel's list
-                }
-            }
-
-            override fun onError(exception: ImageCaptureException) {
-                println("Error capturing image: $exception")
-            }
-        }
-    )
-}
 
 
 @Preview
 @Composable
 fun FoodScanScreenPreview() {
     val navController = rememberNavController()
-    FoodScanScreen(viewModel = ImageViewModel(), navController = navController)
+    FoodScanScreen(viewModel = ImageCaptureViewModel(), navController = navController)
 }

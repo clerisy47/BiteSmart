@@ -11,7 +11,7 @@ import com.app.bitesmart.screens.IngredientsScreen
 import com.app.bitesmart.screens.LogInScreen
 import com.app.bitesmart.screens.SignUpScreen
 import com.app.bitesmart.screens.UserDashboardScreen
-import com.app.bitesmart.viewModels.ImageViewModel
+import com.app.bitesmart.viewModels.ImageCaptureViewModel
 
 @Composable
 fun BiteSmartNavigation() {
@@ -36,7 +36,7 @@ fun BiteSmartNavigation() {
         }
         composable(route = NavigationScreens.FoodScanScreen.name) {
             // Pass the ViewModel to the FoodScanScreen
-            val viewModel: ImageViewModel = remember { ImageViewModel() }
+            val viewModel: ImageCaptureViewModel = remember { ImageCaptureViewModel() }
             FoodScanScreen(navController = navController, viewModel = viewModel)
         }
     }
