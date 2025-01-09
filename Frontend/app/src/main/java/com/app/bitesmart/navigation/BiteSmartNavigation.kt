@@ -6,9 +6,9 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.app.bitesmart.screens.FoodScanScreen
+import com.app.bitesmart.screens.HistoryScreen
 import com.app.bitesmart.screens.IngredientsScreen
 import com.app.bitesmart.screens.LogInScreen
-import com.app.bitesmart.screens.NutritionTrackerScreen
 import com.app.bitesmart.screens.SignUpScreen
 import com.app.bitesmart.screens.UserDashboardScreen
 import com.app.bitesmart.viewModels.ImageViewModel
@@ -28,8 +28,8 @@ fun BiteSmartNavigation() {
         composable(route = NavigationScreens.UserDashboardScreen.name) {
             UserDashboardScreen(navController = navController)
         }
-        composable(route = NavigationScreens.NutritionTrackerScreen.name) {
-            NutritionTrackerScreen(navController = navController)
+        composable(route = NavigationScreens.HistoryScreen.name) {
+            HistoryScreen(navController = navController)
         }
         composable(route = NavigationScreens.IngredientsScreen.name) {
             IngredientsScreen(navController = navController)
