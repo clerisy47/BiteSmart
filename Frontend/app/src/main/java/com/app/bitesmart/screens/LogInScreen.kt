@@ -12,7 +12,6 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -28,6 +27,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.app.bitesmart.R
+import com.app.bitesmart.components.CustomTextField
 import com.app.bitesmart.navigation.NavigationScreens
 
 @Composable
@@ -35,8 +35,10 @@ fun LogInScreen(
     navController: NavController,
     modifier: Modifier = Modifier
 ) {
+    // States for text fields
     val username = remember { mutableStateOf("") }
     val password = remember { mutableStateOf("") }
+
     Surface(
         modifier = modifier
     ) {
@@ -62,28 +64,20 @@ fun LogInScreen(
                     painter = painterResource(R.drawable.log_in_img_avatar),
                     contentDescription = null,
                     modifier = Modifier
-                        .padding(24.dp)
-                        .size(size = 100.dp)
+                        .padding(16.dp)
+                        .size(size = 80.dp)
                         .clip(shape = CircleShape)
 
                 )
 
                 Column(
-                    verticalArrangement = Arrangement.spacedBy(space = 24.dp),
+                    verticalArrangement = Arrangement.spacedBy(space = 16.dp),
                     horizontalAlignment = Alignment.CenterHorizontally,
                     modifier = Modifier.padding(bottom = 16.dp)
                 ) {
 
-                    OutlinedTextField(
-                        value = username.value,
-                        onValueChange = { username.value = it },
-                        label = { Text(text = stringResource(R.string.username), style = MaterialTheme.typography.labelLarge) },
-                    )
-                    OutlinedTextField(
-                        value = password.value,
-                        onValueChange = { password.value = it },
-                        label = { Text(text = stringResource(R.string.password), style = MaterialTheme.typography.labelLarge) },
-                    )
+                    CustomTextField(label = stringResource(R.string.username), textState = username)
+                    CustomTextField(label = stringResource(R.string.password), textState = password)
 
                     Text(
                         text = stringResource(R.string.forget_password),
@@ -96,6 +90,9 @@ fun LogInScreen(
                     )
                     Button(
                         onClick = {
+                            // Access the values of username and password for verification
+                            val usernameValue = username.value
+                            val passwordValue = password.value
                             //Todo: go to user dashboard after verifying
                             navController.navigate(route = NavigationScreens.UserDashboardScreen.name)
                         }
@@ -109,7 +106,7 @@ fun LogInScreen(
                 Row(
                     horizontalArrangement = Arrangement.Center,
                     verticalAlignment = Alignment.CenterVertically,
-                    modifier = Modifier.padding(bottom = 24.dp)
+                    modifier = Modifier.padding(bottom = 16.dp)
                 ) {
                     HorizontalDivider(
                         modifier = Modifier.weight(2f)
