@@ -66,6 +66,7 @@ dependencies {
     // To recognize Korean script
     implementation(libs.text.recognition.korean)
 
+    implementation(libs.androidx.navigation.compose)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

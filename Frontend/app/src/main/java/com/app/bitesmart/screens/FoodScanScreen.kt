@@ -38,6 +38,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.compose.LocalLifecycleOwner
+import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 import com.app.bitesmart.viewModels.ImageViewModel
 import com.app.bitesmart.widgets.BottomAppBar
 import com.app.bitesmart.widgets.TopAppBar
@@ -46,7 +48,7 @@ import kotlin.coroutines.resume
 import kotlin.coroutines.suspendCoroutine
 
 @Composable
-fun FoodScanScreen(modifier: Modifier = Modifier, viewModel: ImageViewModel) {
+fun FoodScanScreen(modifier: Modifier = Modifier, viewModel: ImageViewModel, navController: NavController) {
     val lensFacing = CameraSelector.LENS_FACING_BACK
     val lifecycleOwner = LocalLifecycleOwner.current
     val context = LocalContext.current
@@ -71,8 +73,8 @@ fun FoodScanScreen(modifier: Modifier = Modifier, viewModel: ImageViewModel) {
     }
     Scaffold(
         modifier = modifier,
-        topBar = { TopAppBar(title = "Food Scan") },
-        bottomBar = { BottomAppBar() }
+        topBar = { TopAppBar(title = "Food Scan", navController = navController) },
+        bottomBar = { BottomAppBar(navController = navController) }
     ) { innerPadding ->
         Surface(
             modifier = Modifier.padding(innerPadding)
@@ -193,5 +195,6 @@ private fun captureImage(imageCapture: ImageCapture, context: Context, viewModel
 @Preview
 @Composable
 fun FoodScanScreenPreview() {
-    FoodScanScreen(viewModel = ImageViewModel())
+    val navController = rememberNavController()
+    FoodScanScreen(viewModel = ImageViewModel(), navController = navController)
 }

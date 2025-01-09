@@ -25,10 +25,16 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 import com.app.bitesmart.R
+import com.app.bitesmart.navigation.NavigationScreens
 
 @Composable
-fun LogInScreen(modifier: Modifier = Modifier) {
+fun LogInScreen(
+    navController: NavController,
+    modifier: Modifier = Modifier
+) {
     val username = remember { mutableStateOf("") }
     val password = remember { mutableStateOf("") }
     Surface(
@@ -91,6 +97,7 @@ fun LogInScreen(modifier: Modifier = Modifier) {
                     Button(
                         onClick = {
                             //Todo: go to user dashboard after verifying
+                            navController.navigate(route = NavigationScreens.UserDashboardScreen.name)
                         }
                     ) {
                         Text(
@@ -119,6 +126,7 @@ fun LogInScreen(modifier: Modifier = Modifier) {
                 Button(
                     onClick = {
                         //Todo: go to the sign up page to sign in
+                        navController.navigate(route = NavigationScreens.SignUpScreen.name)
                     },
                 ) {
                     Text(
@@ -135,5 +143,6 @@ fun LogInScreen(modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 fun LogInScreenPreview() {
-    LogInScreen()
+    val navController = rememberNavController()
+    LogInScreen(navController = navController)
 }

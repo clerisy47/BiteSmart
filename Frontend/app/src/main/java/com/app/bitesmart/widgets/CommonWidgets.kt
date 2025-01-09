@@ -26,76 +26,89 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 import com.app.bitesmart.R
+import com.app.bitesmart.navigation.NavigationScreens
 
 @Composable
-fun BottomAppBar() {
+fun BottomAppBar(navController: NavController) {
 
-            BottomAppBar(
-                actions = {
-                    Row(
-                        verticalAlignment = Alignment.CenterVertically,
-                        horizontalArrangement = Arrangement.SpaceEvenly,
-                        modifier = Modifier.fillMaxWidth()
-                    ) {
-                        IconButton(onClick = { /* do something */ }) {
-                            Icon(
-                                Icons.Outlined.DocumentScanner,
-                                contentDescription = "Localized description"
-                            )
-                        }
-                        IconButton(onClick = { /* do something */ }) {
-                            Image(
-                                painter = painterResource(R.drawable.log_in_img_avatar),
-                                contentDescription = null,
-                                modifier = Modifier
-                                    .size(size = 80.dp)
-                                    .clip(shape = CircleShape)
-
-                            )
-                        }
-                        IconButton(onClick = { /* do something */ }) {
-                            Icon(
-                                Icons.Outlined.ShoppingBag,
-                                contentDescription = "Localized description",
-                            )
-                        }
-                    }
-                   
+    BottomAppBar(
+        actions = {
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.SpaceEvenly,
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                IconButton(onClick = {
+                    navController.navigate(route = NavigationScreens.FoodScanScreen.name)
+                }) {
+                    Icon(
+                        Icons.Outlined.DocumentScanner,
+                        contentDescription = "Localized description"
+                    )
                 }
-            )
+                IconButton(onClick = {
+                    navController.navigate(route = NavigationScreens.UserDashboardScreen.name)
+                }) {
+                    Image(
+                        painter = painterResource(R.drawable.log_in_img_avatar),
+                        contentDescription = null,
+                        modifier = Modifier
+                            .size(size = 80.dp)
+                            .clip(shape = CircleShape)
+
+                    )
+                }
+                IconButton(onClick = {
+                    navController.navigate(route = NavigationScreens.NutritionTrackerScreen.name)
+                }) {
+                    Icon(
+                        Icons.Outlined.ShoppingBag,
+                        contentDescription = "Localized description",
+                    )
+                }
+            }
+
+        }
+    )
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun TopAppBar(title: String){
-                CenterAlignedTopAppBar(
-                    colors = TopAppBarDefaults.centerAlignedTopAppBarColors(
-                        containerColor = MaterialTheme.colorScheme.primaryContainer,
-                        titleContentColor = MaterialTheme.colorScheme.onSurface,
-                    ),
-                    title = {
-                        Text(
-                            text = title,
-                            maxLines = 1,
-                            overflow = TextOverflow.Ellipsis,
-                        )
-                    },
-                    navigationIcon = {
-                        IconButton(onClick = { /* do something */ }) {
-                            Icon(
-                                imageVector = Icons.AutoMirrored.Filled.ArrowBack,
-                                contentDescription = "Navigate to previous screen"
-                            )
-                        }
-                    },
-                    scrollBehavior = null,
+fun TopAppBar(title: String, navController: NavController) {
+    CenterAlignedTopAppBar(
+        colors = TopAppBarDefaults.centerAlignedTopAppBarColors(
+            containerColor = MaterialTheme.colorScheme.primaryContainer,
+            titleContentColor = MaterialTheme.colorScheme.onSurface,
+        ),
+        title = {
+            Text(
+                text = title,
+                maxLines = 1,
+                overflow = TextOverflow.Ellipsis,
+            )
+        },
+        navigationIcon = {
+            IconButton(onClick = {
+                navController.popBackStack()
+            }) {
+                Icon(
+                    imageVector = Icons.AutoMirrored.Filled.ArrowBack,
+                    contentDescription = "Navigate to previous screen"
                 )
+            }
+        },
+        scrollBehavior = null,
+    )
 
 }
+
 @Preview
 @Composable
-fun WidgetPreview(){
-    BottomAppBar()
+fun WidgetPreview() {
+    val navController = rememberNavController()
+    BottomAppBar(navController = navController)
 //    TopAppBar()
 }
