@@ -18,8 +18,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Check
-import androidx.compose.material.icons.filled.Close
 import androidx.compose.material.icons.outlined.PhotoCamera
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -40,6 +38,7 @@ import androidx.core.content.ContextCompat
 import androidx.lifecycle.compose.LocalLifecycleOwner
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
+import com.app.bitesmart.navigation.NavigationScreens
 import com.app.bitesmart.viewModels.ImageViewModel
 import com.app.bitesmart.widgets.BottomAppBar
 import com.app.bitesmart.widgets.TopAppBar
@@ -106,24 +105,25 @@ fun FoodScanScreen(modifier: Modifier = Modifier, viewModel: ImageViewModel, nav
                     verticalAlignment = Alignment.CenterVertically,
                     modifier = Modifier.fillMaxWidth()
                 ) {
-                    IconButton(
-                        onClick = {
-                            captureImage(imageCapture, context, viewModel)
-                        },
-                        modifier = Modifier
-                            .size(size = 60.dp)
-                            .clip(shape = CircleShape)
-                            .background(color = MaterialTheme.colorScheme.primaryContainer)
-                    ) {
-                        Icon(
-                            Icons.Default.Close,
-                            contentDescription = "Camera Image",
-                            modifier = Modifier.size(size = 40.dp)
-                        )
-                    }
+//                    IconButton(
+//                        onClick = {
+//                            captureImage(imageCapture, context, viewModel)
+//                        },
+//                        modifier = Modifier
+//                            .size(size = 60.dp)
+//                            .clip(shape = CircleShape)
+//                            .background(color = MaterialTheme.colorScheme.primaryContainer)
+//                    ) {
+//                        Icon(
+//                            Icons.Default.Close,
+//                            contentDescription = "Camera Image",
+//                            modifier = Modifier.size(size = 40.dp)
+//                        )
+//                    }
                     IconButton(
                         onClick = {
                             //Todo: capture image
+                            navController.navigate(route = NavigationScreens.IngredientsScreen.name)
                         },
                         modifier = Modifier
                             .size(size = 80.dp)
@@ -136,21 +136,21 @@ fun FoodScanScreen(modifier: Modifier = Modifier, viewModel: ImageViewModel, nav
                             modifier = Modifier.size(size = 40.dp)
                         )
                     }
-                    IconButton(
-                        onClick = {
-                            //Todo: capture image
-                        },
-                        modifier = Modifier
-                            .size(size = 60.dp)
-                            .clip(shape = CircleShape)
-                            .background(color = MaterialTheme.colorScheme.primaryContainer)
-                    ) {
-                        Icon(
-                            Icons.Default.Check,
-                            contentDescription = "Camera Image",
-                            modifier = Modifier.size(size = 40.dp)
-                        )
-                    }
+//                    IconButton(
+//                        onClick = {
+//                            //Todo: capture image
+//                        },
+//                        modifier = Modifier
+//                            .size(size = 60.dp)
+//                            .clip(shape = CircleShape)
+//                            .background(color = MaterialTheme.colorScheme.primaryContainer)
+//                    ) {
+//                        Icon(
+//                            Icons.Default.Check,
+//                            contentDescription = "Camera Image",
+//                            modifier = Modifier.size(size = 40.dp)
+//                        )
+//                    }
                 }
 
             }

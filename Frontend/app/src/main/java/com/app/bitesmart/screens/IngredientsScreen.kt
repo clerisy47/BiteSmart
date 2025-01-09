@@ -24,6 +24,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
+import com.app.bitesmart.navigation.NavigationScreens
 import com.app.bitesmart.widgets.IngredientColumn
 import com.app.bitesmart.widgets.TopAppBarWithTitle
 
@@ -55,6 +56,7 @@ fun IngredientsScreen(modifier: Modifier = Modifier, navController: NavControlle
                     IconButton(
                         onClick = {
                             //Todo: add to history
+                            navController.navigate(route = NavigationScreens.HistoryScreen.name)
                         },
                         modifier = Modifier.clip(shape = RoundedCornerShape(8.dp))
                             .background(color = Color(0xFF40C731))
@@ -68,8 +70,8 @@ fun IngredientsScreen(modifier: Modifier = Modifier, navController: NavControlle
                     }
                     IconButton(
                         onClick = {
-                            //Todo: add to history
-
+                            //Todo: discard
+                            navController.navigate(route = NavigationScreens.FoodScanScreen.name)
                         },
                         modifier = Modifier
                             .clip(shape = RoundedCornerShape(8.dp))
