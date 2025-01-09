@@ -47,21 +47,20 @@ fun UserDashboardScreen(modifier: Modifier = Modifier, navController: NavControl
                 Box(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .height(284.dp)
+                        .height(240.dp)
                         .background(color = MaterialTheme.colorScheme.secondaryContainer),
                     contentAlignment = Alignment.BottomCenter
                 ) {
                         Box(
                             modifier = Modifier
                                 .fillMaxWidth()
-                                .height(235.dp)
-                                .padding(horizontal = 48.dp)
-                                .offset(y = 103.dp)
+                                .padding(horizontal = 32.dp)
+                                .offset(y = 60.dp)
                                 .background(color = MaterialTheme.colorScheme.onTertiary),
                             contentAlignment = Alignment.Center
                         ) {
                             Column(
-                                modifier = Modifier.fillMaxWidth().padding(bottom = 16.dp),
+                                modifier = Modifier.fillMaxWidth(),
                                 horizontalAlignment = Alignment.CenterHorizontally,
                                 verticalArrangement = Arrangement.Center
                             ) {
@@ -73,46 +72,60 @@ fun UserDashboardScreen(modifier: Modifier = Modifier, navController: NavControl
                                         .offset(y = (-44).dp)
                                         .clip(CircleShape)
                                 )
-                                Text(
-                                    text = "Angela Marksmen",
-                                    style = MaterialTheme.typography.titleMedium,
-                                    modifier = Modifier.offset(y = (-10).dp)
-                                )
-                                Row(
-                                    modifier = Modifier
-                                        .fillMaxWidth()
-                                        .padding(top = 24.dp),
-                                    horizontalArrangement = Arrangement.SpaceEvenly,
-                                    verticalAlignment = Alignment.CenterVertically
-                                ) {
-                                    Card(
-                                        shape = MaterialTheme.shapes.small
+                                Column(
+                                    modifier = Modifier.offset(y = (-32).dp),
+                                    horizontalAlignment = Alignment.CenterHorizontally,
+                                    verticalArrangement = Arrangement.Center
+                                ){
+                                    Text(
+                                        text = "Angela Marksmen",
+                                        style = MaterialTheme.typography.titleMedium,
+                                    )
+                                    Row(
+                                        modifier = Modifier
+                                            .fillMaxWidth()
+                                            .padding(top = 16.dp),
+                                        horizontalArrangement = Arrangement.SpaceEvenly,
+                                        verticalAlignment = Alignment.CenterVertically
                                     ) {
-                                        Column(
-                                            modifier = Modifier.padding(vertical = 16.dp).width(98.dp),
-                                            horizontalAlignment = Alignment.CenterHorizontally,
-                                            verticalArrangement = Arrangement.spacedBy(8.dp)
+                                        Card(
+                                            shape = MaterialTheme.shapes.small
                                         ) {
-                                            Text(text = "Scans")
-                                            Text(text = "80")
+                                            Column(
+                                                modifier = Modifier.padding(vertical = 16.dp).width(98.dp),
+                                                horizontalAlignment = Alignment.CenterHorizontally,
+                                                verticalArrangement = Arrangement.spacedBy(8.dp)
+                                            ) {
+                                                Text(text = "Scans")
+                                                Text(text = "80")
+                                            }
                                         }
-                                    }
-                                    Card(
-                                        shape = MaterialTheme.shapes.small
-                                    ) {
-                                        Column(
-                                            modifier = Modifier.padding(vertical = 16.dp).width(98.dp),
-                                            horizontalAlignment = Alignment.CenterHorizontally,
-                                            verticalArrangement = Arrangement.spacedBy(8.dp)
+                                        Card(
+                                            shape = MaterialTheme.shapes.small
                                         ) {
-                                            Text(text = "Allergies")
-                                            Text(text = "10")
+                                            Column(
+                                                modifier = Modifier.padding(vertical = 16.dp).width(98.dp),
+                                                horizontalAlignment = Alignment.CenterHorizontally,
+                                                verticalArrangement = Arrangement.spacedBy(8.dp)
+                                            ) {
+                                                Text(text = "Allergies")
+                                                Text(text = "10")
+                                            }
                                         }
                                     }
                                 }
+
                             }
                         }
-                    
+                }
+
+                // Other ui elements from here
+                Column(
+                    modifier = Modifier.fillMaxSize().padding(top = 60.dp).padding(16.dp)
+                ) {
+                    Text(
+                        text = "Other ui elements"
+                    )
                 }
 
             }

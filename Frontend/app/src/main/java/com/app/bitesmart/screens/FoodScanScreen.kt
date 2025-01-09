@@ -73,7 +73,7 @@ fun FoodScanScreen(modifier: Modifier = Modifier, viewModel: ImageViewModel, nav
     }
     Scaffold(
         modifier = modifier,
-        topBar = { TopAppBar(title = "Food Scan", navController = navController) },
+        topBar = { TopAppBar(title = "Food Scan") },
         bottomBar = { BottomAppBar(navController = navController) }
     ) { innerPadding ->
         Surface(

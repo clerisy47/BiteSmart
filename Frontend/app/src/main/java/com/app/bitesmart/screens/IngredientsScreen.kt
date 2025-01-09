@@ -11,13 +11,14 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.app.bitesmart.widgets.TopAppBar
+import com.app.bitesmart.widgets.TopAppBarWithTitle
 
 @Composable
 fun IngredientsScreen(modifier: Modifier = Modifier, navController: NavController ){
 
     Scaffold(
         modifier = modifier,
-        topBar = { TopAppBar(title = "Ingredients", navController = navController) }
+        topBar = { TopAppBarWithTitle(title = "Ingredients", navController = navController) }
     ){innerPadding ->
         Surface(
             modifier = Modifier.padding(innerPadding)

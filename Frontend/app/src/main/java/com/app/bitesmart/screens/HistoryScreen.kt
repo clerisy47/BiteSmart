@@ -13,18 +13,18 @@ import com.app.bitesmart.widgets.BottomAppBar
 import com.app.bitesmart.widgets.TopAppBar
 
 @Composable
-fun NutritionTrackerScreen(modifier: Modifier = Modifier, navController: NavController) {
+fun HistoryScreen(modifier: Modifier = Modifier, navController: NavController) {
 
     Scaffold(
         modifier = modifier,
-        topBar = { TopAppBar(title = "Nutrition Tracker", navController = navController) },
+        topBar = { TopAppBar(title = "Nutrition Tracker") },
         bottomBar = { BottomAppBar(navController = navController) }
     ) { innerPadding ->
         Surface(
             modifier = Modifier.padding(innerPadding)
         ) {
             Text(
-                text = "Nutrition Tracker screen"
+                text = "History screen"
             )
         }
 
@@ -34,7 +34,7 @@ fun NutritionTrackerScreen(modifier: Modifier = Modifier, navController: NavCont
 
 @Preview
 @Composable
-fun NutritionTrackerScreenPreview() {
+fun HistoryScreenPreview() {
     val navController = rememberNavController()
-    NutritionTrackerScreen(navController = navController)
+    HistoryScreen(navController = navController)
 }

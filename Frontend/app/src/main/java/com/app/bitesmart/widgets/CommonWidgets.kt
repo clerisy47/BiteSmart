@@ -62,7 +62,7 @@ fun BottomAppBar(navController: NavController) {
                     )
                 }
                 IconButton(onClick = {
-                    navController.navigate(route = NavigationScreens.NutritionTrackerScreen.name)
+                    navController.navigate(route = NavigationScreens.HistoryScreen.name)
                 }) {
                     Icon(
                         Icons.Outlined.ShoppingBag,
@@ -77,7 +77,7 @@ fun BottomAppBar(navController: NavController) {
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun TopAppBar(title: String, navController: NavController) {
+fun TopAppBarWithTitle(title: String, navController: NavController) {
     CenterAlignedTopAppBar(
         colors = TopAppBarDefaults.centerAlignedTopAppBarColors(
             containerColor = MaterialTheme.colorScheme.primaryContainer,
@@ -99,6 +99,26 @@ fun TopAppBar(title: String, navController: NavController) {
                     contentDescription = "Navigate to previous screen"
                 )
             }
+        },
+        scrollBehavior = null,
+    )
+
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun TopAppBar(title: String) {
+    CenterAlignedTopAppBar(
+        colors = TopAppBarDefaults.centerAlignedTopAppBarColors(
+            containerColor = MaterialTheme.colorScheme.primaryContainer,
+            titleContentColor = MaterialTheme.colorScheme.onSurface,
+        ),
+        title = {
+            Text(
+                text = title,
+                maxLines = 1,
+                overflow = TextOverflow.Ellipsis,
+            )
         },
         scrollBehavior = null,
     )
