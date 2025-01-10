@@ -1,19 +1,47 @@
 from database.connection import ingredients
-from schemas.ingredients_schema import IngredientRequest, IngredientData
+from schemas.ingredients_schema import IngredientRequest, IngredientItem
+import google.generativeai as genai
 
 import logging
 
 logging.basicConfig(level=logging.INFO)
 
+import typing_extensions as typing
 
-async def extract_ingridients():
-    pass
+
+class Information(typing.TypedDict):
+    information: typing.List[str]
+    extra_details: str
+
+
+GOOGLE_API_KEY = "AIzaSyBV_7pw611g6J19JzJCwWevKXGIfnVuEjg"
+
+
+def extract_ingridients(text: str):
+    genai.configure(api_key=GOOGLE_API_KEY)
+    system_instruction = """Extract list of nutritional information contents inside the food. 
+        If the information has multiple words, make it 1 or 2 word, also capitalise first letter.
+        The word should be full and common version, if it is written in other language, translate to English.
+        If it is written in short form like Vit B for Vitamin B, then write more common word ie vitamin.
+        Moreover, add extra information about the product as well that a user must know."""
+
+    model = genai.GenerativeModel(
+        "gemini-1.5-pro-latest", system_instruction=system_instruction
+    )
+
+    result = model.generate_content(
+        text,
+        generation_config=genai.GenerationConfig(
+            response_mime_type="application/json", response_schema=Information
+        ),
+    )
+    return result.text
 
 
 async def get_ingridient(name: str):
     ingridient = await ingredients.find_one({"name": name})
     if ingridient:
-        return IngredientData(**ingridient)
+        return IngredientItem(**ingridient)
     return None
 
 
