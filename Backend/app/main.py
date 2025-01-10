@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.api.ingredients_routes import router as hazard_router
-from app.database.connection import shutdown_db_client
+from api.ingredients_routes import router as ingridients_router
+from database.connection import shutdown_db_client
 
 app = FastAPI()
 
@@ -13,7 +13,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.include_router(hazard_router, prefix="/api")
+app.include_router(ingridients_router, prefix="/api")
 
 
 @app.on_event("shutdown")
