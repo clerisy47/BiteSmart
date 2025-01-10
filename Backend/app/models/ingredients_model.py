@@ -1,9 +1,9 @@
 from datetime import datetime
 
-class Accident:
-    def __init__(self, type:str,  latitude: float, longitude: float, frequency: int = 1, latest_update: datetime = datetime.utcnow()):
-        self.type = type
-        self.latitude = latitude
-        self.longitude = longitude
-        self.frequency = frequency
-        self.latest_update = latest_update
+
+class IngrdientsDatabase:
+    def __init__(self, name: str, description: str, allergies: list, source: str):
+        self.name = name
+        self.description = description
+        self.allergies = allergies
+        self.source = source
