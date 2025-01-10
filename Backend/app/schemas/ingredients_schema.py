@@ -14,7 +14,7 @@ class IngredientItem(BaseModel):
 
 class IngredientData(BaseModel):
     items: list[IngredientItem]
-    extraDetails: str
+    extra_details: str
 
     class Config:
         orm_mode = True
