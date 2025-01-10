@@ -1,43 +1,34 @@
-from app.database.connection import hazard_collection
-from app.schemas.location_schema import LocationRequest
-from datetime import datetime
-from app.database.connection import hazard_collection
-from app.schemas.location_schema import HazardData
-from typing import List
+from database.connection import ingredients
+from schemas.ingredients_schema import IngredientRequest, IngredientData
 
 import logging
 
 logging.basicConfig(level=logging.INFO)
 
-async def find_hazard(type: str, lat: float, lon: float):
-    return await hazard_collection.find_one({"type": type, "latitude": lat, "longitude": lon})
 
-async def increment_hazard_count(type: str, lat: float, lon: float):
-    logging.info(f"Incrementing hazard count for type: {type}, lat: {lat}, lon: {lon}")
-    hazard = await find_hazard(type, lat, lon)
-    if hazard:
-        new_count = hazard["frequency"] + 1
-        updated_data = {
-            "$set": {
-                "frequency": new_count,
-                "latest_update": datetime.utcnow()
-            }
-        }
-        await hazard_collection.update_one({"_id": hazard["_id"]}, updated_data)
-        hazard["frequency"] = new_count
-        hazard["latest_update"] = datetime.utcnow()
-        return hazard
-    else:
-        new_hazard = {
-            "type": type,
-            "latitude": lat,
-            "longitude": lon,
-            "frequency": 1,
-            "latest_update": datetime.utcnow()
-        }
-        await hazard_collection.insert_one(new_hazard)
-        return new_hazard
+async def extract_ingridients():
+    pass
 
-async def get_all_hazards() -> List[HazardData]:
-    hazards = await hazard_collection.find().to_list(length=None)
-    return [HazardData(**hazard) for hazard in hazards]
+
+async def get_ingridient(name: str):
+    ingridient = await ingredients.find_one({"name": name})
+    if ingridient:
+        return IngredientData(**ingridient)
+    return None
+
+
+async def add_ingridient(ingridient: IngredientRequest):
+    ingridient_data = ingridient.model_dump()
+    result = await ingredients.insert_one(ingridient_data)
+    return result.inserted_id
+
+
+async def update_ingridient(name: str, ingridient: IngredientRequest):
+    ingridient_data = ingridient.model_dump()
+    result = await ingredients.update_one({"name": name}, {"$set": ingridient_data})
+    return result.modified_count
+
+
+async def delete_ingridient(name: str):
+    result = await ingredients.delete_one({"name": name})
+    return result.deleted_count
