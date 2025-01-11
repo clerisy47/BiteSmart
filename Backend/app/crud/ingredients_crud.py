@@ -1,5 +1,5 @@
-from database.connection import ingredients
-from schemas.ingredients_schema import IngredientRequest, IngredientItem
+from app.database.connection import ingredients, to_add
+from app.schemas.ingredients_schema import IngredientRequest, IngredientItem
 import google.generativeai as genai
 
 import logging
@@ -39,24 +39,32 @@ def extract_ingridients(text: str):
 
 
 async def get_ingridient(name: str):
-    ingridient = await ingredients.find_one({"name": name})
-    if ingridient:
-        return IngredientItem(**ingridient)
+    ingredient = await ingredients.find_one({"name": name})
+    if ingredient:
+        return IngredientItem(**ingredient)
     return None
 
-
-async def add_ingridient(ingridient: IngredientRequest):
-    ingridient_data = ingridient.model_dump()
+async def add_ingridient(ingredient: IngredientItem):
+    ingridient_data = ingredient.model_dump()
     result = await ingredients.insert_one(ingridient_data)
     return result.inserted_id
 
 
-async def update_ingridient(name: str, ingridient: IngredientRequest):
-    ingridient_data = ingridient.model_dump()
+async def update_ingridient(name: str, ingredient: IngredientRequest):
+    ingridient_data = ingredient.model_dump()
     result = await ingredients.update_one({"name": name}, {"$set": ingridient_data})
     return result.modified_count
 
 
 async def delete_ingridient(name: str):
     result = await ingredients.delete_one({"name": name})
+    return result.deleted_count
+
+
+async def add_missing(ingredient: str):
+    result = await to_add.insert_one({'name': ingredient})
+    return result.inserted_id
+
+async def delete_missing(name: str):
+    result = await to_add.delete_one({"name": name})
     return result.deleted_count
