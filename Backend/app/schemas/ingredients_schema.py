@@ -17,4 +17,4 @@ class IngredientData(BaseModel):
     extra_details: str
 
     class Config:
-        orm_mode = True
+        from_attributes = True
