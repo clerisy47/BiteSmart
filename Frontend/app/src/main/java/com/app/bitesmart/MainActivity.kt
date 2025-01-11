@@ -21,6 +21,8 @@ import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.app.bitesmart.navigation.BiteSmartNavigation
 import com.app.bitesmart.onBoard.OnBoardingScreen
 import com.app.bitesmart.onBoard.OnBoardingUtils
+import com.app.bitesmart.permission.PermissionDeniedScreen
+import com.app.bitesmart.permission.PermissionRationaleScreen
 import com.app.bitesmart.ui.theme.BiteSmartTheme
 import kotlinx.coroutines.launch
 
@@ -29,62 +31,84 @@ class MainActivity : ComponentActivity() {
     private val cameraPermissionRequest =
         registerForActivityResult(ActivityResultContracts.RequestPermission()) { isGranted ->
             if (isGranted) {
-                // Implement camera related  code
                 launchApp()
             } else {
-                // Camera permission denied
+                showPermissionDeniedMessage()
             }
-
         }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         installSplashScreen()
 
-        // Check if the camera permission is granted
-        when (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA)) {
-            PackageManager.PERMISSION_GRANTED -> {
-                // Camera permission already granted
-                // Implement camera-related code here
-                launchApp()
-            }
-            else -> {
-                // Camera permission not granted, request it
-                cameraPermissionRequest.launch(Manifest.permission.CAMERA)
-            }
-        }
+        checkCameraPermission()
 
         enableEdgeToEdge()
     }
-    private fun launchApp(){
+
+    private fun checkCameraPermission() {
+        when (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA)) {
+            PackageManager.PERMISSION_GRANTED -> {
+                launchApp()
+            }
+            PackageManager.PERMISSION_DENIED -> {
+                if (shouldShowRequestPermissionRationale(Manifest.permission.CAMERA)) {
+                    showPermissionRationale()
+                } else {
+                    cameraPermissionRequest.launch(Manifest.permission.CAMERA)
+                }
+            }
+        }
+    }
+
+    private fun launchApp() {
         setContent {
             BiteSmartTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { _ ->
-                    //don't include innerPadding it disturbs the padding of topAppBar and ButtonAppBar
-                    if(onBoardingUtils.isOnBoardingCompleted()){
+                    if (onBoardingUtils.isOnBoardingCompleted()) {
                         BiteSmartNavigation()
-                    }else{
+                    } else {
                         ShowOnBoardingScreen()
                     }
                 }
             }
         }
     }
+
+    private fun showPermissionRationale() {
+        setContent {
+            PermissionRationaleScreen(
+                onRequestPermission = { openAskPermission() },
+            )
+        }
+    }
+
+    private fun showPermissionDeniedMessage() {
+        setContent {
+            PermissionDeniedScreen(onOpenSettings = { openAskPermission() })
+        }
+    }
+
+    private fun openAskPermission() {
+        cameraPermissionRequest.launch(Manifest.permission.CAMERA)
+    }
+
     @Composable
-    private fun ShowOnBoardingScreen(){
+    private fun ShowOnBoardingScreen() {
         val scope = rememberCoroutineScope()
-        Box(modifier = Modifier.background(color = MaterialTheme.colorScheme.background)){
+        Box(modifier = Modifier.background(color = MaterialTheme.colorScheme.background)) {
             OnBoardingScreen {
                 onBoardingUtils.setOnBoardingCompleted()
-//            Toast.makeText(context,"OnBoarding Completed", Toast.LENGTH_SHORT).show()
                 scope.launch {
-                    setContent{
+                    setContent {
                         BiteSmartNavigation()
                     }
                 }
             }
         }
     }
+
     @Preview(showBackground = true)
     @Composable
     fun GreetingPreview() {
@@ -92,10 +116,4 @@ class MainActivity : ComponentActivity() {
             ShowOnBoardingScreen()
         }
     }
-
 }
-
-
-
-
-
