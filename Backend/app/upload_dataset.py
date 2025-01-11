@@ -1,7 +1,7 @@
 import asyncio
 import csv
 import ast
-from app.crud.ingredients_crud import add_ingridient
+from app.crud.ingredients_crud import add_ingredient
 from app.schemas.ingredients_schema import IngredientItem
 
 
@@ -13,14 +13,14 @@ async def upload_data(csv_file_path: str):
                 allergies = ast.literal_eval(row["Allergies"])
             except (SyntaxError, ValueError):
                 allergies = []
-            ingridient = IngredientItem(
+            ingredient = IngredientItem(
                 name=row["Ingredients"],
                 description=row["Description"],
                 allergies=allergies,
                 source=row["Verified From"],
             )
-            await add_ingridient(ingridient)
-            print(f"Added ingredient: {ingridient.name}")
+            await add_ingredient(ingredient)
+            print(f"Added ingredient: {ingredient.name}")
 
 
 if __name__ == "__main__":
