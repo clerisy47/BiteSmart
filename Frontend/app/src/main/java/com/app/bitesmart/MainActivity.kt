@@ -10,8 +10,10 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
@@ -42,9 +44,17 @@ class MainActivity : ComponentActivity() {
 
         installSplashScreen()
 
-        checkCameraPermission()
-
         enableEdgeToEdge()
+
+        if (onBoardingUtils.isOnBoardingCompleted()) {
+            checkCameraPermission()
+        } else {
+            setContent {
+                BiteSmartTheme {
+                    ShowOnBoardingScreen()
+                }
+            }
+        }
     }
 
     private fun checkCameraPermission() {
@@ -65,12 +75,13 @@ class MainActivity : ComponentActivity() {
     private fun launchApp() {
         setContent {
             BiteSmartTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { _ ->
-                    if (onBoardingUtils.isOnBoardingCompleted()) {
+                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                    Surface(
+                        modifier = Modifier.padding(innerPadding)
+                    ) {
                         BiteSmartNavigation()
-                    } else {
-                        ShowOnBoardingScreen()
                     }
+
                 }
             }
         }
@@ -101,9 +112,7 @@ class MainActivity : ComponentActivity() {
             OnBoardingScreen {
                 onBoardingUtils.setOnBoardingCompleted()
                 scope.launch {
-                    setContent {
-                        BiteSmartNavigation()
-                    }
+                    checkCameraPermission()
                 }
             }
         }
