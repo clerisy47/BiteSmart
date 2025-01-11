@@ -1,0 +1,129 @@
+Ingredients,Description,Allergies,Verified From
+Chicken,"Lean protein source, common in many diets.","[""Non Veg""]",https://www.who.int/teams/nutrition-and-food-safety
+Fish,"High in omega-3 fatty acids; good for heart health (e.g., Tuna, Salmon).","[""Fish Allergy"", ""Non Veg""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Beef,Protein-rich red meat.,"[""Non Veg""]",https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Pork,Source of protein and various vitamins.,"[""Non Veg""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Lamb,"Tender red meat, rich in iron and zinc.","[""Non Veg""]",https://www.who.int/teams/nutrition-and-food-safety
+Shrimp,"Popular seafood, rich in protein.","[""Shellfish Allergy"",""Non Veg""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Crab,Shellfish high in protein and omega-3s.,"[""Shellfish Allergy"",""Non Veg""]",https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Lobster,"Shellfish delicacy, rich in nutrients.","[""Shellfish Allergy"",""Non Veg""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Cod,Lean fish with mild flavor.,"[""Fish Allergy"", ""Non Veg""]",https://www.who.int/teams/nutrition-and-food-safety
+Mackerel,"Fatty fish, high in omega-3s and vitamin D.","[""Fish Allergy"", ""Non Veg""]",https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Turkey,"Lean protein, common in holiday meals.","[""Non Veg""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Duck,"Rich in fat and flavor, often used in gourmet cooking.","[""Non Veg""]",https://www.who.int/teams/nutrition-and-food-safety
+Squid,"Seafood used in many cuisines (e.g., calamari).","[""Shellfish Allergy"",""Non Veg""]",https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Clams,Shellfish high in iron and vitamin B12.,"[""Shellfish Allergy"",""Non Veg""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Scallops,Delicate shellfish with a mild flavor.,"[""Shellfish Allergy"",""Non Veg""]",https://www.who.int/teams/nutrition-and-food-safety
+Lentils,Legume rich in protein and dietary fiber.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Chickpeas,Source of protein and dietary fiber.,[],https://www.who.int/teams/nutrition-and-food-safety
+Black Beans,Nutrient-rich legume.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Kidney Beans,"Red beans rich in protein, fiber, and iron.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Pinto Beans,Creamy legume used in various cuisines.,[],https://www.who.int/teams/nutrition-and-food-safety
+Rice,Staple grain used worldwide.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Brown Rice,https://www.who.int/teams/nutrition-and-food-safetyle-grain variety of rice.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Oats,https://www.who.int/teams/nutrition-and-food-safetyle grain rich in fiber and nutrients.,[],https://www.who.int/teams/nutrition-and-food-safety
+Quinoa,Gluten-free seed used as a grain.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Millet,"Gluten-free grain, often used in porridges.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Sorghum,Gluten-free grain used in various dishes.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Tapioca,"Starch extracted from cassava root, used as a thickener.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Coconut Milk,"Liquid from grated coconut, used in cooking.","[""Tree Nut Allergy""]",https://www.who.int/teams/nutrition-and-food-safety
+Coconut Oil,"Oil extracted from coconut, used in cooking.","[""Tree Nut Allergy""]",https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Olive Oil,"Oil extracted from olives, rich in monounsaturated fats.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Sunflower Oil,"Oil extracted from sunflower seeds, commonly used in cooking.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Sesame Oil,"Oil extracted from sesame seeds, used in cooking and flavoring.","[""Sesame Allergy""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Flaxseeds,High in omega-3 fatty acids and fiber.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Chia Seeds,"Tiny seeds rich in omega-3s, fiber, and antioxidants.",[],https://www.who.int/teams/nutrition-and-food-safety
+Pumpkin Seeds,"Seeds from pumpkins, high in protein and iron.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Cabbage,Cruciferous vegetable high in fiber and vitamins.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Spinach,"Leafy green rich in vitamins, iron, and antioxidants.",[],https://www.who.int/teams/nutrition-and-food-safety
+Broccoli,"Cruciferous vegetable rich in vitamin C, fiber, and folate.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Carrots,"Root vegetable rich in beta-carotene, fiber, and vitamin A.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Sweet Potatoes,Root vegetable rich in fiber and beta-carotene.,[],https://www.who.int/teams/nutrition-and-food-safety
+Mushrooms,"Fungi rich in nutrients, often used in savory dishes.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Apples,"Fruit high in fiber, vitamin C, and antioxidants.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Bananas,Tropical fruit high in potassium and fiber.,[],https://www.who.int/teams/nutrition-and-food-safety
+Oranges,Citrus fruit high in vitamin C and antioxidants.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Grapes,"Fruit high in antioxidants, particularly resveratrol.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Blueberries,Berries rich in antioxidants and vitamins.,[],https://www.who.int/teams/nutrition-and-food-safety
+Strawberries,Berry rich in vitamin C and antioxidants.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Pineapple,Tropical fruit high in vitamin C and bromelain.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Mango,"Tropical fruit rich in vitamin C, fiber, and antioxidants.",[],https://www.who.int/teams/nutrition-and-food-safety
+Papaya,Tropical fruit high in vitamin C and digestive enzymes.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Xanthan Gum,Thickening agent used in foods and cosmetics.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Guar Gum,"Derived from guar beans, used as a thickener and stabilizer.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Sodium Alginate,A thickening agent derived from seaweed.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Potassium Citrate,Potassium salt used as a food additive to control acidity.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Calcium Carbonate,Mineral compound used as a food additive and supplement.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Sorbic Acid,Preservative used in foods and cosmetics to prevent spoilage.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Benzoyl Peroxide,A bleaching agent used in food processing and acne treatment.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Ammonium Bicarbonate,Leavening agent used in baking.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Citric Acid,Organic acid used to add tartness and as a preservative.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Lactic Acid,Organic acid used as a preservative and pH regulator.,[],https://www.who.int/teams/nutrition-and-food-safety
+Malic Acid,"Organic acid found in fruits, used for sourness and preservation.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Tartaric Acid,Organic acid used to stabilize wine and as a food additive.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Lecithins,"Fatty substances derived from plants, used as emulsifiers.",[],https://www.who.int/teams/nutrition-and-food-safety
+Propionic Acid,"Organic acid used as a preservative, particularly in baked goods.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Phosphoric Acid,"Acid used in food, beverages, and as a cleaning agent.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Calcium Disodium EDTA,Used as a preservative and stabilizer in food.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Tert-Butylhydroquinone,Antioxidant used to preserve fats and oils in food.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Stearic Acid,Fatty acid used in the food industry and cosmetics.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Ammonium Sulfate,Inorganic salt used in fertilizers and as a food additive.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Sodium Erythorbate,A preservative that prevents the oxidation of fats and oils.,[],https://www.who.int/teams/nutrition-and-food-safety
+Ascorbic Acid,"Vitamin C, used as an antioxidant and preservative in food.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Glyceryl Monostearate,Emulsifier used to combine oil and water in food products.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Sodium Tripolyphosphate,Used as a preservative and emulsifier in seafood and meat.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Magnesium Stearate,Used as a lubricant and emulsifier in food and pharmaceuticals.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Polyethylene Glycol,"Used as a thickener and emulsifier in foods, cosmetics, and medicines.",[],https://www.who.int/teams/nutrition-and-food-safety
+Sodium Metabisulfite,"Preservative and antioxidant, used to preserve foods and beverages.","[""Sulphite Sensitivity""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Potassium Metabisulfite,"Used as a preservative and antioxidant, often in dried fruits.","[""Sulphite Sensitivity""]",https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Ethyl Vanillin,"Synthetic flavoring agent, used to mimic vanilla flavor.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Cellulose Gum,Used as a thickener and stabilizer in processed foods.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Microcrystalline Cellulose,Used as a binder and filler in food and pharmaceuticals.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Silicon Dioxide,Anti-caking agent used in powdered foods and supplements.,[],https://www.who.int/teams/nutrition-and-food-safety
+Calcium Stearate,Used as a lubricant and emulsifier in food production.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Mono- and Diglycerides,Emulsifiers used to blend ingredients in food.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Sodium Bicarbonate,Leavening agent used in baking and as an antacid.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Caramel Color,"Colorant made by heating sugar, used in beverages and foods.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Annatto Extract,Natural food colorant derived from seeds of the achiote tree.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Cochineal Extract,"Red colorant derived from insects, used in food and cosmetics.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Beta-Carotene,"Pro-vitamin A, used as a colorant and antioxidant.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Lutein,"Antioxidant found in green leafy vegetables, used for eye health.",[],https://www.who.int/teams/nutrition-and-food-safety
+Lycopene,"Antioxidant found in tomatoes, used for health and color.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Pectin,"Natural gelling agent extracted from fruits, used in jams.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Glutamic Acid,"Amino acid, often used as a flavor enhancer (MSG).",[],https://www.who.int/teams/nutrition-and-food-safety
+Citral,Citrus-scented compound used as a flavoring agent.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Linalool,"Floral-scented compound, used as a fragrance and flavor.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Methylcellulose,"Derived from cellulose, used as a thickener and emulsifier.",[],https://www.who.int/teams/nutrition-and-food-safety
+Malt Extract,"Extracted from barley, used for its sweetness and color.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+High Maltose Corn Syrup,"Syrup containing high levels of maltose, used as a sweetener.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Isomalt,"Sugar substitute made from beets, used in sugar-free products.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Inulin,Prebiotic fiber used to aid digestion and as a sugar substitute.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Natural Tocopherols ,"Antioxidants found in vegetable oils, used to preserve food.",[],https://www.who.int/teams/nutrition-and-food-safety
+Nicotine,A highly addictive chemical found in tobacco.,"[""Heart Problems"", ""Cancer""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Tar,"A toxic substance in tobacco smoke, contributing to cancer and lung disease.","[""Cancer""]",https://www.who.int/teams/nutrition-and-food-safety
+Acetone,Found in tobacco smoke and is a solvent in some cosmetic products.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Ammonia,Used in tobacco products to enhance nicotine delivery.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Formaldehyde,A carcinogen used in tobacco and pan masala products.,"[""Cancer""]",https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Carbon Monoxide,A harmful gas produced from burning tobacco and pan masala.,"[""Heart Problems""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Acetaldehyde,A chemical in tobacco smoke and pan masala linked to cancer and addiction.,"[""Cancer"", ""Heart Problems""]",https://www.who.int/teams/nutrition-and-food-safety
+Ethanol (Alcohol),"The intoxicating compound in alcoholic beverages, can affect brain function.","[""Heart Problems"", ""Diabetes""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Tannins,"Astringent compounds found in alcohol and pan masala, can cause irritation.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Sugar,Often used in alcoholic beverages to enhance taste.,"[""Diabetes""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Caramel,"Coloring agents used in alcoholic beverages, especially in liquors.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Caffeine,Found in some alcohol mixtures like caffeinated beers and drinks.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Betel Leaves,"Main ingredient in pan masala, with stimulant effects.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Areca Nut,"The main stimulant in pan masala, linked to mouth and throat cancers.","[""Cancer""]",https://www.who.int/teams/nutrition-and-food-safety
+Slaked Lime,Often used in pan masala to enhance the effects of other ingredients.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Cardamom,"A flavoring in pan masala, often used for its digestive properties.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Cloves,Spices used in pan masala for their aromatic properties.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Menthol,Often used in cigarettes and pan masala for its cooling effect.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Sodium Nitrite,Used as a preservative in processed tobacco products and in some alcoholic beverages.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Propylene Glycol,A humectant used in some cigarette brands and alcoholic drinks.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Benzene,"Found in tobacco smoke, linked to cancer and respiratory issues.","[""Cancer""]",https://www.who.int/teams/nutrition-and-food-safety
+Hydrogen Cyanide,A toxic compound found in cigarette smoke.,"[""Heart Problems"", ""Cancer""]",https://www.who.int/teams/nutrition-and-food-safety
+Maltodextrin,Often used in alcohol and pan masala as a filler or stabilizer.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Glycerin,"Used in some alcohol and cigarette products, can cause respiratory issues.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Sodium Chloride,"Commonly known as salt, used in processed pan masala and in alcohol drinks.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Sodium Benzoate,Preservative used in pan masala and alcoholic drinks.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Sulphur Dioxide,Used in alcoholic beverages to prevent oxidation.,"[""Sulphite Sensitivity""]",https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Tobacco,The plant used to create cigarettes and other products.,"[""Cancer"", ""Heart Problems""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
