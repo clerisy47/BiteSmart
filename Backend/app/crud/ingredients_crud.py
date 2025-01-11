@@ -17,7 +17,7 @@ class Information(typing.TypedDict):
 GOOGLE_API_KEY = "AIzaSyBV_7pw611g6J19JzJCwWevKXGIfnVuEjg"
 
 
-def extract_ingridients(text: str):
+def extract_ingredients(text: str):
     genai.configure(api_key=GOOGLE_API_KEY)
     system_instruction = """Extract list of nutritional information contents inside the food. 
         If the information has multiple words, make it 1 or 2 word, also capitalise first letter.
@@ -38,25 +38,25 @@ def extract_ingridients(text: str):
     return result.text
 
 
-async def get_ingridient(name: str):
+async def get_ingredient(name: str):
     ingredient = await ingredients.find_one({"name": name})
     if ingredient:
         return IngredientItem(**ingredient)
     return None
 
-async def add_ingridient(ingredient: IngredientItem):
-    ingridient_data = ingredient.model_dump()
-    result = await ingredients.insert_one(ingridient_data)
+async def add_ingredient(ingredient: IngredientItem):
+    ingredient_data = ingredient.model_dump()
+    result = await ingredients.insert_one(ingredient_data)
     return result.inserted_id
 
 
-async def update_ingridient(name: str, ingredient: IngredientRequest):
-    ingridient_data = ingredient.model_dump()
-    result = await ingredients.update_one({"name": name}, {"$set": ingridient_data})
+async def update_ingredient(name: str, ingredient: IngredientRequest):
+    ingredient_data = ingredient.model_dump()
+    result = await ingredients.update_one({"name": name}, {"$set": ingredient_data})
     return result.modified_count
 
 
-async def delete_ingridient(name: str):
+async def delete_ingredient(name: str):
     result = await ingredients.delete_one({"name": name})
     return result.deleted_count
 
