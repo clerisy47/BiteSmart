@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from api.ingredients_routes import router as ingridients_router
-from database.connection import shutdown_db_client
+from app.api.ingredients_routes import router as ingridients_router
+from app.database.connection import shutdown_db_client
 
 app = FastAPI()
 
