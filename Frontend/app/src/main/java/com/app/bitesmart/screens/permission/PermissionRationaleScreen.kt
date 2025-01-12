@@ -1,4 +1,4 @@
-package com.app.bitesmart.permission
+package com.app.bitesmart.screens.permission
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.Button

@@ -23,8 +23,8 @@ import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.app.bitesmart.navigation.BiteSmartNavigation
 import com.app.bitesmart.onBoard.OnBoardingScreen
 import com.app.bitesmart.onBoard.OnBoardingUtils
-import com.app.bitesmart.permission.PermissionDeniedScreen
-import com.app.bitesmart.permission.PermissionRationaleScreen
+import com.app.bitesmart.screens.permission.PermissionDeniedScreen
+import com.app.bitesmart.screens.permission.PermissionRationaleScreen
 import com.app.bitesmart.ui.theme.BiteSmartTheme
 import kotlinx.coroutines.launch
 
