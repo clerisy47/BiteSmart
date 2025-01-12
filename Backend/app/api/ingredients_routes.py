@@ -17,7 +17,7 @@ async def post_text(text: IngredientRequest):
         if ingredient:
             ing_lst.append(ingredient)
         else:
-            is_present = find_missing(info)
+            is_present = await find_missing(info)
             if(not is_present):
                 await add_missing(info)
 
