@@ -1,128 +1,64 @@
-package com.app.bitesmart.screens.allergies
-
-import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.text.BasicTextField
-import androidx.compose.material3.*
-import androidx.compose.runtime.*
+package  com.app.bitesmart.screens.allergies
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Button
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Text
+import androidx.compose.material3.TextField
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.app.bitesmart.widgets.TopAppBar
-
-import com.app.bitesmart.data.userData.HealthConditions
+import androidx.lifecycle.viewmodel.compose.viewModel
+import com.app.bitesmart.viewModels.UserAllergiesViewModel
 
 @Composable
-fun AllergiesScreen(
-    onSave: (HealthConditions) -> Unit
+fun AddAllergyScreen(
+    userAllergiesViewModel: UserAllergiesViewModel = viewModel()
 ) {
-    var newAllergy by remember { mutableStateOf(TextFieldValue("")) }
-    var newCondition by remember { mutableStateOf(TextFieldValue("")) }
-    var allergies by remember { mutableStateOf(mutableListOf<String>()) }
-    var conditions by remember { mutableStateOf(mutableListOf<String>()) }
+    // Observe user allergies from the ViewModel
+    val allergies = userAllergiesViewModel.userAllergies.value
+    val allergyInput = userAllergiesViewModel.allergyInput.value
 
-    Scaffold(
-        topBar = {
-            TopAppBar(title = "Health Conditions")
-        },
-        content = { paddingValues ->
-            Column(
-                modifier = Modifier
-                    .fillMaxSize()
-                    .padding(paddingValues)
-                    .padding(16.dp)
-            ) {
-                Text("Add Allergies", style = MaterialTheme.typography.titleMedium)
-                Row(
-                    modifier = Modifier.fillMaxWidth(),
-                    verticalAlignment = Alignment.CenterVertically
-                ) {
-                    BasicTextField(
-                        value = newAllergy,
-                        onValueChange = { newAllergy = it },
-                        modifier = Modifier
-                            .weight(1f)
-                            .background(MaterialTheme.colorScheme.onPrimary, MaterialTheme.shapes.small)
-                            .padding(8.dp)
-                    )
-                    Spacer(modifier = Modifier.width(8.dp))
-                    Button(onClick = {
-                        if (newAllergy.text.isNotBlank()) {
-                            allergies.add(newAllergy.text)
-                            newAllergy = TextFieldValue("") // Clear input
-                        }
-                    }) {
-                        Text("Add")
-                    }
-                }
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(16.dp),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.spacedBy(16.dp)
+    ) {
+        // Display current allergies
+        Text(text = "Your Allergies: ${allergies.joinToString(", ")}", style = MaterialTheme.typography.bodyMedium)
 
-                Text("Allergies List:", style = MaterialTheme.typography.titleMedium)
-                allergies.forEach { allergy ->
-                    Text("- $allergy", style = MaterialTheme.typography.bodyMedium)
-                }
+        // Input field to add allergy
+        TextField(
+            value = allergyInput,
+            onValueChange = { userAllergiesViewModel.allergyInput.value = it },
+            label = { Text("Enter Allergy") },
+            modifier = Modifier.fillMaxWidth()
+        )
 
-                Spacer(modifier = Modifier.height(16.dp))
-
-                Text("Add Conditions (e.g., Diabetes)", style = MaterialTheme.typography.titleMedium)
-                Row(
-                    modifier = Modifier.fillMaxWidth(),
-                    verticalAlignment = Alignment.CenterVertically
-                ) {
-                    BasicTextField(
-                        value = newCondition,
-                        onValueChange = { newCondition = it },
-                        modifier = Modifier
-                            .weight(1f)
-                            .background(MaterialTheme.colorScheme.onPrimary, MaterialTheme.shapes.small)
-                            .padding(8.dp)
-                    )
-                    Spacer(modifier = Modifier.width(8.dp))
-                    Button(onClick = {
-                        if (newCondition.text.isNotBlank()) {
-                            conditions.add(newCondition.text)
-                            newCondition = TextFieldValue("") // Clear input
-                        }
-                    }) {
-                        Text("Add")
-                    }
-                }
-
-                Text("Conditions List:", style = MaterialTheme.typography.titleMedium)
-                conditions.forEach { condition ->
-                    Text("- $condition", style = MaterialTheme.typography.bodyMedium)
-                }
-
-                Spacer(modifier = Modifier.height(24.dp))
-
-                Button(
-                    onClick = {
-                        val healthConditions = HealthConditions(
-                            allergiesName = allergies,
-                            conditionsName = conditions
-                        )
-                        onSave(healthConditions)
-                    },
-                    modifier = Modifier.align(Alignment.End)
-                ) {
-                    Text("Save")
-                }
-            }
+        // Button to add allergy
+        Button(
+            onClick = { userAllergiesViewModel.addAllergy() },
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text("Add Allergy")
         }
-    )
+    }
+
+    // Initial fetch of allergies
+    LaunchedEffect(key1 = Unit) {
+        userAllergiesViewModel.fetchUserAllergies()
+    }
 }
-@Preview(
-    showBackground = true,
-)
+@Preview(showBackground = true)
 @Composable
-fun CustomAllergiesScreenPreview() {
-    AllergiesScreen(
-        onSave = { healthConditions ->
-            // Simulate a save action
-
-        }
-    )
+fun DefaultPreview() {
+    AddAllergyScreen()
 }
-
-

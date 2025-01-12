@@ -1,5 +1,7 @@
 package com.app.bitesmart.screens
 
+import android.util.Log
+import android.widget.Toast
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -24,11 +26,17 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.app.bitesmart.R
 import com.app.bitesmart.components.CustomTextField
 import com.app.bitesmart.navigation.NavigationScreens
+import com.app.bitesmart.viewModels.UserViewModel
+import com.app.bitesmart.viewModels.UserViewModelFactory
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 @Composable
 fun LogInScreen(
@@ -38,6 +46,10 @@ fun LogInScreen(
     // States for text fields
     val username = remember { mutableStateOf("") }
     val password = remember { mutableStateOf("") }
+
+    val userViewModel: UserViewModel = viewModel(
+        factory = UserViewModelFactory(context = navController.context)
+    )
 
     Surface(
         modifier = modifier
@@ -91,10 +103,47 @@ fun LogInScreen(
                     Button(
                         onClick = {
                             // Access the values of username and password for verification
-                            val usernameValue = username.value
-                            val passwordValue = password.value
+                            val enteredUsername = username.value
+                            val enteredPassword = password.value
                             //Todo: go to user dashboard after verifying
-                            navController.navigate(route = NavigationScreens.UserDashboardScreen.name)
+//
+                            kotlinx.coroutines.GlobalScope.launch {
+                                try {
+                                    val (storedUsername, storedPassword) = userViewModel.getAccountDetails()
+
+                                    // Check the credentials
+                                    if (enteredUsername == storedUsername && enteredPassword == storedPassword) {
+                                        // Navigate to the user dashboard if credentials are correct
+                                        withContext(Dispatchers.Main) {
+                                            navController.navigate(route = NavigationScreens.UserDashboardScreen.name)
+                                            Toast.makeText(
+                                                navController.context,
+                                                "Log In Successfully",
+                                                Toast.LENGTH_SHORT
+                                            ).show()
+                                        }
+                                    } else {
+                                        // Show error message if credentials don't match
+                                        withContext(Dispatchers.Main) {
+                                            Toast.makeText(
+                                                navController.context,
+                                                "Invalid username or password",
+                                                Toast.LENGTH_SHORT
+                                            ).show()
+                                        }
+                                    }
+                                } catch (e: Exception) {
+                                    Log.e("DataStore", "Error occurred while checking credentials: ${e.message}", e)
+                                    // Handle exceptions if needed
+                                    withContext(Dispatchers.Main) {
+                                        Toast.makeText(
+                                            navController.context,
+                                            "Error occurred while checking credentials",
+                                            Toast.LENGTH_SHORT
+                                        ).show()
+                                    }
+                                }
+                            }
                         }
                     ) {
                         Text(
