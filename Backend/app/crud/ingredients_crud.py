@@ -26,7 +26,7 @@ def extract_ingredients(text: str):
         The output words must have first letter capital. ie it should not be palm oil or Palm oil, it should be Palm Oil. 
         If some items has 0 gm composition, then it means that the item is not present. So, don't consider it. 
         Don't add extra words than what is mentioned in the text. 
-        Apart from the nutrtional components, if there are extra details that is written that user should know, write it in extra_details"""
+        If there are extra details that user should know, write it in extra_details"""
 
     model = genai.GenerativeModel(
         "gemini-1.5-pro-latest", system_instruction=system_instruction

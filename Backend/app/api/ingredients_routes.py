@@ -22,4 +22,5 @@ async def post_text(text: IngredientRequest):
                 await add_missing(info)
         print(info)
 
-    return IngredientData(items=ing_lst, extra_details=result_json["extra_details"])
+    extra_details = result_json.get("extra_details", "")
+    return IngredientData(items=ing_lst, extra_details=extra_details)
