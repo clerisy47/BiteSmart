@@ -21,10 +21,8 @@ def extract_ingredients(text: str):
     genai.configure(api_key=GOOGLE_API_KEY)
     system_instruction = """Extract list of nutritional information contents inside the food. 
         If the information has multiple words, make it 1 or 2 word.
-        The word should be full and common version, if it is written in other language, translate to English.
-        If it is written in short form like Vit B for Vitamin B, then write more common word ie Vitamin.
-        The output words must have first letter capital. ie it should not be palm oil or Palm oil, it should be Palm Oil.
-        Don't add extra information then mentioned.
+        The word should be full and common version, if it is written in other language, translate to English, but display only one word.
+        If it is written in short form like Vit B for Vitamin B, then write more common word ie Vitamin. The output words must have first letter capital. ie it should not be palm oil or Palm oil, it should be Palm Oil. If some items has 0 gm composition, then it means that the item is not present. So, don't consider it. Don't add extra information then mentioned.
         Moreover, add extra information about the product as well that a user must know in extra_details."""
 
     model = genai.GenerativeModel(
@@ -62,9 +60,15 @@ async def delete_ingredient(name: str):
     result = await ingredients.delete_one({"name": name})
     return result.deleted_count
 
+async def find_missing(name: str):
+    is_present = await ingredients.find_one({"name": name})
+    if is_present:
+        return True
+    return False
 
-async def add_missing(ingredient: str):
-    result = await to_add.insert_one({'name': ingredient})
+
+async def add_missing(name: str):
+    result = await to_add.insert_one({'name': name})
     return result.inserted_id
 
 async def delete_missing(name: str):

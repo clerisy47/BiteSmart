@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
 from app.schemas.ingredients_schema import IngredientRequest,  IngredientData
-from app.crud.ingredients_crud import extract_ingredients, get_ingredient, add_missing
+from app.crud.ingredients_crud import extract_ingredients, get_ingredient, add_missing, find_missing
 import json
 
 
@@ -17,6 +17,8 @@ async def post_text(text: IngredientRequest):
         if ingredient:
             ing_lst.append(ingredient)
         else:
-            await add_missing(info)
+            is_present = find_missing(info)
+            if(not is_present):
+                await add_missing(info)
 
     return IngredientData(items=ing_lst, extra_details=result_json["extra_details"])
