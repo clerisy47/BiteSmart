@@ -80,9 +80,8 @@ fun FoodScanScreen(
     LaunchedEffect(responseTextUIState.isResponseReceived) {
         if (responseTextUIState.isResponseReceived) {
             // After text recognition is done, navigate to ResponseScreen
-            Log.d("ViewModel", responseTextUIState.responseText)
             val encodedResponseText = URLEncoder.encode(responseTextUIState.responseText, StandardCharsets.UTF_8.toString())
-            navController.navigate(route = "${NavigationScreens.ResponseScreen.name}/$encodedResponseText")
+            navController.navigate(route = "${NavigationScreens.IngredientsScreen.name}/$encodedResponseText")
         }
     }
 

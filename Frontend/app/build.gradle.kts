@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    kotlin("plugin.serialization") version "1.5.0"
 }
 
 android {
@@ -70,6 +71,8 @@ dependencies {
     implementation(libs.androidx.core.splashscreen)
     implementation(libs.okhttp)
     implementation(libs.androidx.runtime.livedata)
+    implementation(libs.kotlinx.serialization.json)
+
 
 
     testImplementation(libs.junit)

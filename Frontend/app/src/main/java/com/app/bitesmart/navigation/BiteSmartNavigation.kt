@@ -10,7 +10,6 @@ import com.app.bitesmart.screens.FoodScanScreen
 import com.app.bitesmart.screens.HistoryScreen
 import com.app.bitesmart.screens.IngredientsScreen
 import com.app.bitesmart.screens.LogInScreen
-import com.app.bitesmart.screens.ResponseScreen
 import com.app.bitesmart.screens.SignUpScreen
 import com.app.bitesmart.screens.UserDashboardScreen
 import java.net.URLDecoder
@@ -34,20 +33,17 @@ fun BiteSmartNavigation() {
         composable(route = NavigationScreens.HistoryScreen.name) {
             HistoryScreen(navController = navController)
         }
-        composable(route = NavigationScreens.IngredientsScreen.name) {
-            IngredientsScreen(navController = navController)
-        }
         composable(route = NavigationScreens.FoodScanScreen.name) {
             FoodScanScreen(navController = navController)
         }
         composable(
-            route = "${NavigationScreens.ResponseScreen.name}/{responseText}",
+            route = "${NavigationScreens.IngredientsScreen.name}/{responseText}",
             arguments = listOf(navArgument("responseText") { type = NavType.StringType })
         ) { backStackEntry ->
             val encodedResponseText = backStackEntry.arguments?.getString("responseText") ?: ""
             val responseText = URLDecoder.decode(encodedResponseText, StandardCharsets.UTF_8.toString())
 
-            ResponseScreen(
+            IngredientsScreen(
                 navController = navController,
                 responseText = responseText
             )
