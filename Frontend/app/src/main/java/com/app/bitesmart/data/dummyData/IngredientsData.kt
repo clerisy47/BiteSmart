@@ -1,4 +1,4 @@
-package com.app.bitesmart.data
+package com.app.bitesmart.data.dummyData
 
 data class IngredientsData(
     val name: String,
