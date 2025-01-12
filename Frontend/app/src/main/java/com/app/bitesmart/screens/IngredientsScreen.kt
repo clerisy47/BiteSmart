@@ -13,8 +13,10 @@ import androidx.compose.material.icons.filled.Save
 import androidx.compose.material.icons.outlined.Delete
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -35,8 +37,7 @@ fun IngredientsScreen(
     navController: NavController,
     responseText: String,
 ) {
-    val ingredientsList = parseJsonResponse(responseText)
-
+    val (ingredientsList, extraDetails) = parseJsonResponse(responseText)
     Scaffold(
         modifier = modifier,
         topBar = { TopAppBarWithTitle(title = "Ingredients", navController = navController) }
@@ -57,6 +58,14 @@ fun IngredientsScreen(
                     IngredientColumn(
                         modifier = Modifier.weight(3f),
                         ingredientList = ingredientsList
+                    )
+                    Text(
+                        text = "Additional Information:",
+                        style = MaterialTheme.typography.labelLarge
+                    )
+                    Text(
+                        text = if (extraDetails == "")"No additional information" else extraDetails,
+                        style = MaterialTheme.typography.bodySmall
                     )
                     Row(
                         modifier = Modifier

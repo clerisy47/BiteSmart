@@ -22,22 +22,26 @@ data class Response(
 
 
 
-fun parseJsonResponse(jsonResponse: String): List<IngredientsData> {
+fun parseJsonResponse(jsonResponse: String): Pair<List<IngredientsData>, String> {
     return try {
         val json = Json { ignoreUnknownKeys = true }
         val response = json.decodeFromString<Response>(jsonResponse)
-        response.items.map { item ->
+
+        val ingredientsList = response.items.map { item ->
             IngredientsData(
                 name = item.name,
                 description = item.description,
                 source = item.source,
-                allergies = item.allergies // Map allergies field
+                allergies = item.allergies
             )
         }
-    } catch (e: Exception) {
 
+        // Return both ingredientsList and extra_details
+        Pair(ingredientsList, response.extra_details)
+    } catch (e: Exception) {
         Log.d("Response", "Error parsing JSON: ${e.message}")
         e.printStackTrace()
-        emptyList() // Return an empty list or handle as needed
+        Pair(emptyList(), "") // Return empty list and empty string in case of error
     }
 }
+
