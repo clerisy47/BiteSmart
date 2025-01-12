@@ -20,10 +20,12 @@ GOOGLE_API_KEY = "AIzaSyBV_7pw611g6J19JzJCwWevKXGIfnVuEjg"
 def extract_ingredients(text: str):
     genai.configure(api_key=GOOGLE_API_KEY)
     system_instruction = """Extract list of nutritional information contents inside the food. 
-        If the information has multiple words, make it 1 or 2 word, also capitalise first letter.
+        If the information has multiple words, make it 1 or 2 word.
         The word should be full and common version, if it is written in other language, translate to English.
-        If it is written in short form like Vit B for Vitamin B, then write more common word ie vitamin.
-        Moreover, add extra information about the product as well that a user must know."""
+        If it is written in short form like Vit B for Vitamin B, then write more common word ie Vitamin.
+        The output words must have first letter capital. ie it should not be palm oil or Palm oil, it should be Palm Oil.
+        Don't add extra information then mentioned.
+        Moreover, add extra information about the product as well that a user must know in extra_details."""
 
     model = genai.GenerativeModel(
         "gemini-1.5-pro-latest", system_instruction=system_instruction
