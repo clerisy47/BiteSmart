@@ -89,7 +89,7 @@ fun LogInScreen(
                 ) {
 
                     CustomTextField(label = stringResource(R.string.username), textState = username)
-                    CustomTextField(label = stringResource(R.string.password), textState = password)
+                    CustomTextField(label = stringResource(R.string.password), textState = password, isLast = true, isPassword = true)
 
                     Text(
                         text = stringResource(R.string.forget_password),

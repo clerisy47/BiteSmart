@@ -68,7 +68,7 @@ fun SignUpScreen(
                 CustomTextField(label = "Email", textState = email)
                 CustomTextField(label = "Phone Number", textState = phoneNumber)
                 CustomTextField(label = "Password", textState = password)
-                CustomTextField(label = "Confirm Password", textState = confirmPassword)
+                CustomTextField(label = "Confirm Password", textState = confirmPassword, isLast = true, isPassword = true)
                 Spacer(Modifier.width(8.dp))
                 Button(
                     onClick = {

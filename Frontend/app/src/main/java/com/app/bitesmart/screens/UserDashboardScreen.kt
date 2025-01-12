@@ -24,6 +24,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -65,12 +66,14 @@ fun UserDashboardScreen(modifier: Modifier = Modifier, navController: NavControl
                                 verticalArrangement = Arrangement.Center
                             ) {
                                 Image(
-                                    painter = painterResource(R.drawable.log_in_img_avatar),
+                                    painter = painterResource(R.drawable.profile_img1),
                                     contentDescription = null,
                                     modifier = Modifier
                                         .size(80.dp)
                                         .offset(y = (-44).dp)
-                                        .clip(CircleShape)
+                                        .clip(CircleShape),
+                                    contentScale = ContentScale.Crop
+
                                 )
                                 Column(
                                     modifier = Modifier.offset(y = (-32).dp),

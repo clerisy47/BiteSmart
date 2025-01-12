@@ -58,7 +58,7 @@ fun BottomAppBar(navController: NavController) {
                         .clip(shape = CircleShape)
                 ) {
                     Image(
-                        painter = painterResource(R.drawable.profile_img),
+                        painter = painterResource(R.drawable.profile_img1),
                         contentDescription = null,
                         modifier = Modifier
                             .size(size = 70.dp)
