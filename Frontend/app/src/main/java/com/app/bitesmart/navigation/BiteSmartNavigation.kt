@@ -1,6 +1,8 @@
 package com.app.bitesmart.navigation
 
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.platform.LocalContext
+import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -13,6 +15,8 @@ import com.app.bitesmart.screens.IngredientsScreen
 import com.app.bitesmart.screens.LogInScreen
 import com.app.bitesmart.screens.SignUpScreen
 import com.app.bitesmart.screens.UserDashboardScreen
+import com.app.bitesmart.viewModels.UserViewModel
+import com.app.bitesmart.viewModels.UserViewModelFactory
 import java.net.URLDecoder
 import java.nio.charset.StandardCharsets
 
@@ -28,8 +32,14 @@ fun BiteSmartNavigation() {
         composable(route = NavigationScreens.SignUpScreen.name) {
             SignUpScreen(navController = navController)
         }
-        composable(route = NavigationScreens.UserDashboardScreen.name) {
-            UserDashboardScreen(navController = navController)
+        composable(route = NavigationScreens.UserDashboardScreen.name) { _ ->
+            val context = LocalContext.current
+            val userViewModel: UserViewModel = viewModel(
+                factory = UserViewModelFactory(context)
+            )
+
+            // Pass the userViewModel to the screen
+            UserDashboardScreen(navController = navController, userViewModel = userViewModel)
         }
         composable(route = NavigationScreens.HistoryScreen.name) {
             HistoryScreen(navController = navController)

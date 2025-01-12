@@ -52,6 +52,11 @@ class UserViewModel(private val context: Context) : ViewModel() {
             confirmPassword = preferences[CONFIRM_PASSWORD_KEY] ?: "No confirm password"
         )
     }
+
+    suspend fun getUsername(): String {
+        val preferences = context.userDataStore.data.first()
+        return preferences[USERNAME_KEY] ?: "No username"
+    }
 }
 
 // Data class to represent the user account details
