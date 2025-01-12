@@ -2,6 +2,7 @@ package com.app.bitesmart.widgets
 
 
 import androidx.compose.animation.animateContentSize
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -20,14 +21,18 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 import com.app.bitesmart.data.dummyData.CaptureDateData
 import com.app.bitesmart.data.dummyData.getCaptureDateData
+import com.app.bitesmart.navigation.NavigationScreens
 
 
 @Composable
 fun HistoryColumn(
     modifier: Modifier = Modifier,
-    historyList: List<CaptureDateData> = getCaptureDateData()
+    historyList: List<CaptureDateData> = getCaptureDateData(),
+    navController: NavController
 ) {
     LazyColumn(
         modifier = modifier
@@ -44,6 +49,9 @@ fun HistoryColumn(
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(8.dp)
+                        .clickable{
+                            navController.navigate(route = NavigationScreens.HistoryDetailsScreen.name)
+                        }
                 ) {
                     Row(
                         modifier = Modifier.fillMaxWidth()
@@ -71,5 +79,6 @@ fun HistoryColumn(
 @Preview(showBackground = true)
 @Composable
 fun PreviewHistoryColumn() {
-    HistoryColumn()
+    val navController = rememberNavController()
+    HistoryColumn(navController = navController)
 }

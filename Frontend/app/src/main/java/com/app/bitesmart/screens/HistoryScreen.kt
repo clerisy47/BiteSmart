@@ -28,7 +28,7 @@ fun HistoryScreen(modifier: Modifier = Modifier, navController: NavController) {
             Column (
                 modifier = Modifier.padding(16.dp)
             ){
-                HistoryColumn()
+                HistoryColumn(navController = navController)
             }
         }
 

@@ -6,5 +6,6 @@ enum class NavigationScreens {
     UserDashboardScreen,
     FoodScanScreen,
     HistoryScreen,
-    IngredientsScreen
+    IngredientsScreen,
+    HistoryDetailsScreen
 }

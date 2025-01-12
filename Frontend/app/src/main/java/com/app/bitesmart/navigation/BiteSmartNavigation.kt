@@ -8,6 +8,7 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.app.bitesmart.screens.FoodScanScreen
 import com.app.bitesmart.screens.HistoryScreen
+import com.app.bitesmart.screens.HistoryDetailsScreen
 import com.app.bitesmart.screens.IngredientsScreen
 import com.app.bitesmart.screens.LogInScreen
 import com.app.bitesmart.screens.SignUpScreen
@@ -47,6 +48,9 @@ fun BiteSmartNavigation() {
                 navController = navController,
                 responseText = responseText
             )
+        }
+        composable(route = NavigationScreens.HistoryDetailsScreen.name) {
+            HistoryDetailsScreen(navController = navController)
         }
     }
 }
