@@ -67,6 +67,10 @@ dependencies {
     implementation(libs.text.recognition.korean)
 
     implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.core.splashscreen)
+    implementation(libs.okhttp)
+    implementation(libs.androidx.runtime.livedata)
+
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

@@ -30,8 +30,8 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.app.bitesmart.data.IngredientsData
-import com.app.bitesmart.data.getIngredientsData
+import com.app.bitesmart.data.dummyData.IngredientsData
+import com.app.bitesmart.data.dummyData.getIngredientsData
 
 
 @Composable

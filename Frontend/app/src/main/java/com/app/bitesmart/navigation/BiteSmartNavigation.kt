@@ -1,17 +1,20 @@
 package com.app.bitesmart.navigation
 
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.remember
+import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navArgument
 import com.app.bitesmart.screens.FoodScanScreen
 import com.app.bitesmart.screens.HistoryScreen
 import com.app.bitesmart.screens.IngredientsScreen
 import com.app.bitesmart.screens.LogInScreen
+import com.app.bitesmart.screens.ResponseScreen
 import com.app.bitesmart.screens.SignUpScreen
 import com.app.bitesmart.screens.UserDashboardScreen
-import com.app.bitesmart.viewModels.ImageCaptureViewModel
+import java.net.URLDecoder
+import java.nio.charset.StandardCharsets
 
 @Composable
 fun BiteSmartNavigation() {
@@ -35,9 +38,20 @@ fun BiteSmartNavigation() {
             IngredientsScreen(navController = navController)
         }
         composable(route = NavigationScreens.FoodScanScreen.name) {
-            // Pass the ViewModel to the FoodScanScreen
-            val viewModel: ImageCaptureViewModel = remember { ImageCaptureViewModel() }
-            FoodScanScreen(navController = navController, viewModel = viewModel)
+            FoodScanScreen(navController = navController)
+        }
+        composable(
+            route = "${NavigationScreens.ResponseScreen.name}/{responseText}",
+            arguments = listOf(navArgument("responseText") { type = NavType.StringType })
+        ) { backStackEntry ->
+            val encodedResponseText = backStackEntry.arguments?.getString("responseText") ?: ""
+            val responseText = URLDecoder.decode(encodedResponseText, StandardCharsets.UTF_8.toString())
+
+            ResponseScreen(
+                navController = navController,
+                responseText = responseText
+            )
         }
     }
 }
+

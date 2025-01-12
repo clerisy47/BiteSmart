@@ -34,7 +34,6 @@ fun SignUpScreen(modifier: Modifier = Modifier, navController: NavController) {
     val name = remember { mutableStateOf("") }
     val email = remember { mutableStateOf("") }
     val phoneNumber = remember { mutableStateOf("") }
-    val dob = remember { mutableStateOf("") }
     val password = remember { mutableStateOf("") }
     val confirmPassword = remember { mutableStateOf("") }
 
@@ -53,7 +52,6 @@ fun SignUpScreen(modifier: Modifier = Modifier, navController: NavController) {
                 CustomTextField(label = "Name", textState = name)
                 CustomTextField(label = "Email", textState = email)
                 CustomTextField(label = "Phone Number", textState = phoneNumber)
-                CustomTextField(label = "Date of Birth", textState = dob)
                 CustomTextField(label = "Password", textState = password)
                 CustomTextField(label = "Confirm Password", textState = confirmPassword)
                 Spacer(Modifier.width(8.dp))
