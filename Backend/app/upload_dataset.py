@@ -24,5 +24,5 @@ async def upload_data(csv_file_path: str):
 
 
 if __name__ == "__main__":
-    csv_path = "train_scripts/dataset_2.csv"
+    csv_path = "train_scripts/dataset.csv"
     asyncio.run(upload_data(csv_path))

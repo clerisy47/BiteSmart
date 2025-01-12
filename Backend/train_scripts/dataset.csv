@@ -1,0 +1,526 @@
+Ingredients,Description,Allergies,Verified From
+Protein,"Essential for muscle repair and growth, found in meat, eggs, beans, and nuts.","['Peanuts', 'Tree Nuts', 'Soy', 'Milk', 'Eggs']",https://www.who.int/teams/nutrition-and-food-safety
+Carbohydrate,"Primary energy source, found in grains, fruits, and vegetables.","['Wheat', 'Diabetes']",https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Added Sugar,"Processed sweeteners in foods and drinks, linked to weight gain and tooth decay.","['Diabetes', 'Heart Problems']",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/
+Natural Sugar,"Sugars naturally present in fruits and milk, less harmful than added sugars.",['Diabetes'],https://www.who.int/teams/nutrition-and-food-safety
+Unsaturated Fats,"Healthy fats from nuts, seeds, and fish, beneficial for heart health.","['Peanuts', 'Tree Nuts', 'Fish']",https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Saturated Fats,"Found in animal products and tropical oils, excessive intake may harm heart health.",['Heart Problems'],https://www.who.int/teams/nutrition-and-food-safety
+Trans Fats,"Artificial fats in processed foods, linked to heart disease and inflammation.",['Heart Problems'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/
+Cholesterol,"A waxy substance in animal products, excess may raise heart disease risk.",['Heart Problems'],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Sodium,"An essential mineral that regulates fluids, excessive intake can raise blood pressure.",['Heart Problems'],https://www.who.int/teams/nutrition-and-food-safety
+Calcium,"Strengthens bones and teeth, found in dairy, leafy greens, and fortified foods.",['Milk'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/
+Copper,"Supports red blood cell production, found in nuts, seeds, and shellfish.","['Tree Nuts', 'Shellfish']",https://www.who.int/teams/nutrition-and-food-safety
+Chloride,"Helps maintain fluid balance, found in table salt and processed foods.",['Heart Problems'],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Iodine,"Essential for thyroid function, found in seafood and iodized salt.",['Shellfish'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/
+Iron,"Vital for oxygen transport, found in red meat, beans, and fortified cereals.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Magnesium,"Supports muscle and nerve function, found in nuts, seeds, and leafy greens.",['Tree Nuts'],https://www.who.int/teams/nutrition-and-food-safety
+Phosphorus,"Strengthens bones and teeth, found in dairy, fish, and meats.","['Milk', 'Fish']",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/
+Potassium,"Regulates fluid balance and muscle contractions, found in fruits and vegetables.",[],https://www.who.int/teams/nutrition-and-food-safety
+Selenium,"Antioxidant supporting thyroid health, found in nuts and seafood.","['Tree Nuts', 'Shellfish']",https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Zinc,"Supports immune function, found in meat, shellfish, and seeds.",['Shellfish'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/
+Dietary Fibers,"Essential for digestive health, found in https://www.who.int/teams/nutrition-and-food-safetyle grains, fruits, and vegetables.","['Wheat', 'Barley', 'Tree Nuts']",https://www.who.int/teams/nutrition-and-food-safety
+Milk,"Rich in calcium and protein, essential for bone health.",['Milk'],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Tree Nuts,"Nutrient-dense, providing healthy fats, vitamins, and minerals.",['Tree Nuts'],https://www.who.int/teams/nutrition-and-food-safety
+Wheat,A common cereal grain rich in carbohydrates and some protein.,"['Wheat', 'Gluten']",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/
+Barley,"A high-fiber cereal grain used in soups, bread, and beverages.","['Barley', 'Gluten']",https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Soy,"A protein-rich legume used in soy milk, tofu, and processed foods.",['Soy'],https://www.who.int/teams/nutrition-and-food-safety
+"Emulsifiers (442, 476)",Additives used to improve texture and stability in processed foods.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Artificial Flavours,Chemically synthesized to mimic natural flavors.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/
+Natural Flavours,Extracted from natural sources to enhance taste.,"['Milk', 'Soy', 'Nuts']",https://www.who.int/teams/nutrition-and-food-safety
+Emulsifiers (442),An additive used for smooth texture in chocolates and baked goods.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Emulsifiers (322),"Lecithin, derived from soy or eggs, used as a stabilizer.","['Soy', 'Eggs']",https://www.who.int/teams/nutrition-and-food-safety
+Iodised Salt,Table salt fortified with iodine for thyroid health.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/
+Refined Wheat Flour,"Finely milled wheat flour, used in baked goods and processed foods.","['Wheat', 'Gluten']",https://www.who.int/teams/nutrition-and-food-safety
+Palmolein,A processed palm oil fraction used in frying and processed foods.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+"Leavening Agent (500(ii), 503(ii))",Chemical agents used in baking to help dough rise.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/
+Cereal Extract,Concentrated flavor or nutrient extract from cereal grains.,"['Wheat', 'Barley', 'Gluten']",https://www.who.int/teams/nutrition-and-food-safety
+Wheat Gluten,"Protein extracted from wheat, used in baking and processed foods.","['Gluten', 'Wheat']",https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Refined Soybean Oil,"Processed oil extracted from soybeans, used in cooking and frying.",['Soy'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/
+Synthetic Vinegar,Artificially produced acetic acid solution used for flavoring.,[],https://www.who.int/teams/nutrition-and-food-safety
+Acetic Acid,"A sour-tasting compound found in vinegar, used as a preservative.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Stabilizers,Additives that help maintain the consistency and texture of foods.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/
+Preservatives,Chemicals that prevent spoilage and extend shelf life of food.,['Sulphites'],https://www.who.int/teams/nutrition-and-food-safety
+Antioxidant,Compounds that prevent oxidation and preserve food's freshness.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Sequestrant,Additives that bind to metal ions to prevent spoilage and discoloration.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/
+Vegetable Fat,"Fats derived from plants, such as sunflower or canola oil.","['Soy', 'Tree Nuts']",https://www.who.int/teams/nutrition-and-food-safety
+Hydrogenated Vegetable Fats,Fats that have been chemically altered to remain solid at room temperature.,['Heart Problems'],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Sesame,"A seed rich in healthy fats and protein, commonly used in baking and cooking.",['Sesame'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/
+Biotin,"A B-vitamin important for skin, hair, and metabolism health.",[],https://www.who.int/teams/nutrition-and-food-safety
+Acidity Regulators,Chemicals that help control the pH level of foods for stability and taste.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Malted Barley,"Barley that has been processed to convert starches to sugars, used in brewing and baking.","['Wheat', 'Barley', 'Gluten']",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/
+Docosahexaenoic Acid,"Omega-3 fatty acid important for brain function, typically found in fish oils.",['Fish'],https://www.who.int/teams/nutrition-and-food-safety
+Schizochytrium,"Algae-derived source of DHA, often used in vegan supplements and food fortification.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Chlorine,"A chemical used in water purification, sometimes present in foods due to treatment.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/
+Folic Acid,A B-vitamin vital for cell division and healthy pregnancies.,[],https://www.who.int/teams/nutrition-and-food-safety
+Palm Olein,"A fraction of palm oil, commonly used for frying and in processed foods.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Peanuts,"A legume often used in snacks and spreads, rich in protein and fats.",['Peanut'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/
+Almonds,"Tree nuts high in healthy fats, protein, and vitamins.","['Almonds', 'Tree Nuts']",https://www.who.int/teams/nutrition-and-food-safety
+Macadamias,"A type of tree nut with high fat content, often found in snacks and desserts.",['Macadamia Nut'],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Sulphites,"Preservatives used in dried fruits, wine, and processed foods to prevent spoilage.","['Asthma', 'Sulphite Sensitivity']",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/
+Gluten,"A protein found in wheat, barley, and rye, responsible for dough elasticity.","['Gluten', 'Wheat']",https://www.who.int/teams/nutrition-and-food-safety
+Synthetic Food Colour,Artificial coloring agents used to enhance the appearance of food.,"['Red 40', 'Yellow 5']",https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Red Chilli Puree,"A paste made from ground red chilies, commonly used in sauces and curries.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/
+Onion Powder,"A finely ground powder made from dehydrated onions, used as a seasoning.",[],https://www.who.int/teams/nutrition-and-food-safety
+Thickener,"Substances used to improve the texture of sauces, soups, and processed foods.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Starch,"A carbohydrate found in foods like potatoes, corn, and rice, used as a thickening agent.","['Wheat', 'Corn', 'Potato']",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/
+Garlic Powder,"A powder made from dehydrated garlic, used as a seasoning in many dishes.",[],https://www.who.int/teams/nutrition-and-food-safety
+Ghee,Clarified butter commonly used in Indian and Middle Eastern cuisine.,['Milk'],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Butter,"A dairy product made by churning cream, commonly used in cooking and baking.",['Milk'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/
+Palm Oil,"A vegetable oil derived from the fruit of the oil palm tree, commonly used in cooking.",[],https://www.who.int/teams/nutrition-and-food-safety
+High-Fructose Corn Syrup,"A sweetener derived from corn, used in soft drinks and processed foods.","['Diabetes', 'Obesity', 'Heart Problems']",https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Monosodium Glutamate,A flavor enhancer commonly added to processed foods and Chinese cuisine.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/
+Artificial Sweeteners,"Chemical sweeteners like aspartame, saccharin, and sucralose, used to replace sugar.",['Diabetes'],https://www.who.int/teams/nutrition-and-food-safety
+Aspartame,A low-calorie artificial sweetener commonly found in diet sodas and sugar-free products.,['Phenylketonuria (PKU)'],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Saccharin,An artificial sweetener used to add sweetness without calories.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/
+Sucralose,A chlorinated sugar compound used as a sugar substitute in many low-calorie foods.,[],https://www.who.int/teams/nutrition-and-food-safety
+Sodium Nitrate,A preservative used in processed meats like bacon and sausages.,"['Heart Problems', 'Cancer']",https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Sodium Nitrite,A preservative used to prevent spoilage in cured meats.,"['Heart Problems', 'Cancer']",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/
+Artificial Food Dyes,Synthetic dyes used to color processed foods and candies.,"['Red 40', 'Yellow 5']",https://www.who.int/teams/nutrition-and-food-safety
+Propylene Glycol,"A synthetic compound used as a stabilizer, humectant, or preservative in foods and cosmetics.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Soy Lecithin,"A common emulsifier derived from soybeans, used in processed foods to improve texture.",['Soy'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/
+Maltodextrin,"A carbohydrate derived from starch, often used as a thickener or sweetener in processed foods.","['Wheat', 'Corn', 'Potato']",https://www.who.int/teams/nutrition-and-food-safety
+Butylated Hydroxyanisole,A synthetic antioxidant used to preserve the freshness of foods.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Butylated Hydroxytoluene,A chemical used to prevent fats and oils in foods from going rancid.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/
+Corn Oils,"Vegetable oil derived from corn, used in cooking and processed foods.",['Corn'],https://www.who.int/teams/nutrition-and-food-safety
+Canola Oils,"A vegetable oil extracted from the seeds of the canola plant, used in cooking and processed foods.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Carrageenan,A seaweed-derived thickener and stabilizer used in dairy and plant-based products.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/
+Sodium Benzoate,A preservative used to prevent the growth of harmful bacteria and fungi in food and beverages.,['Preservatives'],https://www.who.int/teams/nutrition-and-food-safety
+Potassium Bromate,A chemical used to strengthen dough in bread-making and baked goods.,['Cancer'],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Propyl Gallate,A synthetic antioxidant used to preserve the freshness of fats and oils in foods,,https://www.who.int/teams/nutrition-and-food-safety
+Phosphates,Mineral salts added to food for preservation and as a leavening agent.,[],https://www.who.int/teams/nutrition-and-food-safety
+Modified Starch,Starch that has been altered through processing to improve texture and stability.,"['Wheat', 'Corn', 'Potato']",https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Agave Syrup,"A sweetener derived from the agave plant, used in beverages and food products.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/
+Dimethylpolysiloxane,A synthetic compound used as an anti-foaming agent in processed foods.,[],https://www.who.int/teams/nutrition-and-food-safety
+Potassium Sorbate,"A preservative used to prevent the growth of mold, yeast, and bacteria in food.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Calcium Propionate,A preservative used in bread and bakery products to prevent mold growth.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/
+Disodium Inosinate,"A flavor enhancer often used in processed foods, especially in conjunction with MSG.",[],https://www.who.int/teams/nutrition-and-food-safety
+Disodium Guanylate,"A flavor enhancer similar to disodium inosinate, used in combination with MSG.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Titanium Dioxide,A white pigment and food additive used for coloring and opacity in food products.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/
+Erythorbic Acid,A form of Vitamin C used as an antioxidant and preservative in food.,[],https://www.who.int/teams/nutrition-and-food-safety
+Polysorbates,A group of emulsifiers used to blend ingredients and improve texture in foods.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Sulfites,Chemical preservatives used to prevent discoloration and spoilage in foods like dried fruits and wine.,"['Asthma', 'Sulfite Sensitivity']",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/
+Glycerin,"A sugar alcohol used as a humectant, solvent, and sweetener in food products.",[],https://www.who.int/teams/nutrition-and-food-safety
+Sorbitol and Mannitol,Sugar alcohols used as sweeteners in sugar-free foods and chewing gum.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Artificial Translucent Coatings,A synthetic coating used on food products like candies and fruits to add shine.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/
+Shellac,"A resin derived from insects, used as a glossy coating on foods like candy and fruit.",['Shellac'],https://www.who.int/teams/nutrition-and-food-safety
+Eggs,"A rich source of protein and nutrients, commonly used in cooking and baking.",['Eggs'],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Vitamin B1,A water-soluble vitamin important for energy metabolism and nerve function.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/
+Vitamin B2,A vitamin that supports energy production and cell function.,[],https://www.who.int/teams/nutrition-and-food-safety
+Vitamin B3,A water-soluble vitamin essential for metabolism and skin health.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Vitamin B5,A vitamin crucial for energy production and hormone synthesis.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/
+Vitamin B6,A vitamin essential for brain health and the production of red blood cells.,[],https://www.who.int/teams/nutrition-and-food-safety
+Vitamin B9,A B-vitamin important for cell division and pregnancy health.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Vitamin B12,A vitamin critical for nerve function and the production of red blood cells.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/
+Vitamin A,"A fat-soluble vitamin essential for vision, immune function, and skin health.",[],https://www.who.int/teams/nutrition-and-food-safety
+Vitamin C,A water-soluble vitamin known for its antioxidant properties and support of immune function.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Vitamin D2,A form of Vitamin D that helps in the absorption of calcium for bone health.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/
+Chicken,"Lean protein source, common in many diets.","[""Non Veg""]",https://www.who.int/teams/nutrition-and-food-safety
+Fish,"High in omega-3 fatty acids; good for heart health (e.g., Tuna, Salmon).","[""Fish"", ""Non Veg""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Beef,Protein-rich red meat.,"[""Non Veg""]",https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Pork,Source of protein and various vitamins.,"[""Non Veg""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Lamb,"Tender red meat, rich in iron and zinc.","[""Non Veg""]",https://www.who.int/teams/nutrition-and-food-safety
+Shrimp,"Popular seafood, rich in protein.","[""Shellfish"",""Non Veg""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Crab,Shellfish high in protein and omega-3s.,"[""Shellfish"",""Non Veg""]",https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Lobster,"Shellfish delicacy, rich in nutrients.","[""Shellfish"",""Non Veg""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Cod,Lean fish with mild flavor.,"[""Fish"", ""Non Veg""]",https://www.who.int/teams/nutrition-and-food-safety
+Mackerel,"Fatty fish, high in omega-3s and vitamin D.","[""Fish"", ""Non Veg""]",https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Turkey,"Lean protein, common in holiday meals.","[""Non Veg""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Duck,"Rich in fat and flavor, often used in gourmet cooking.","[""Non Veg""]",https://www.who.int/teams/nutrition-and-food-safety
+Squid,"Seafood used in many cuisines (e.g., calamari).","[""Shellfish"",""Non Veg""]",https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Clams,Shellfish high in iron and vitamin B12.,"[""Shellfish"",""Non Veg""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Scallops,Delicate shellfish with a mild flavor.,"[""Shellfish"",""Non Veg""]",https://www.who.int/teams/nutrition-and-food-safety
+Lentils,Legume rich in protein and dietary fiber.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Chickpeas,Source of protein and dietary fiber.,[],https://www.who.int/teams/nutrition-and-food-safety
+Black Beans,Nutrient-rich legume.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Kidney Beans,"Red beans rich in protein, fiber, and iron.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Pinto Beans,Creamy legume used in various cuisines.,[],https://www.who.int/teams/nutrition-and-food-safety
+Rice,Staple grain used worldwide.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Brown Rice,https://www.who.int/teams/nutrition-and-food-safetyle-grain variety of rice.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Oats,https://www.who.int/teams/nutrition-and-food-safetyle grain rich in fiber and nutrients.,[],https://www.who.int/teams/nutrition-and-food-safety
+Quinoa,Gluten-free seed used as a grain.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Millet,"Gluten-free grain, often used in porridges.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Sorghum,Gluten-free grain used in various dishes.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Tapioca,"Starch extracted from cassava root, used as a thickener.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Coconut Milk,"Liquid from grated coconut, used in cooking.","[""Tree Nut""]",https://www.who.int/teams/nutrition-and-food-safety
+Coconut Oil,"Oil extracted from coconut, used in cooking.","[""Tree Nut""]",https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Olive Oil,"Oil extracted from olives, rich in monounsaturated fats.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Sunflower Oil,"Oil extracted from sunflower seeds, commonly used in cooking.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Sesame Oil,"Oil extracted from sesame seeds, used in cooking and flavoring.","[""Sesame""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Flaxseeds,High in omega-3 fatty acids and fiber.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Chia Seeds,"Tiny seeds rich in omega-3s, fiber, and antioxidants.",[],https://www.who.int/teams/nutrition-and-food-safety
+Pumpkin Seeds,"Seeds from pumpkins, high in protein and iron.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Cabbage,Cruciferous vegetable high in fiber and vitamins.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Spinach,"Leafy green rich in vitamins, iron, and antioxidants.",[],https://www.who.int/teams/nutrition-and-food-safety
+Broccoli,"Cruciferous vegetable rich in vitamin C, fiber, and folate.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Carrots,"Root vegetable rich in beta-carotene, fiber, and vitamin A.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Sweet Potatoes,Root vegetable rich in fiber and beta-carotene.,[],https://www.who.int/teams/nutrition-and-food-safety
+Mushrooms,"Fungi rich in nutrients, often used in savory dishes.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Apples,"Fruit high in fiber, vitamin C, and antioxidants.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Bananas,Tropical fruit high in potassium and fiber.,[],https://www.who.int/teams/nutrition-and-food-safety
+Oranges,Citrus fruit high in vitamin C and antioxidants.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Grapes,"Fruit high in antioxidants, particularly resveratrol.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Blueberries,Berries rich in antioxidants and vitamins.,[],https://www.who.int/teams/nutrition-and-food-safety
+Strawberries,Berry rich in vitamin C and antioxidants.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Pineapple,Tropical fruit high in vitamin C and bromelain.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Mango,"Tropical fruit rich in vitamin C, fiber, and antioxidants.",[],https://www.who.int/teams/nutrition-and-food-safety
+Papaya,Tropical fruit high in vitamin C and digestive enzymes.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Xanthan Gum,Thickening agent used in foods and cosmetics.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Guar Gum,"Derived from guar beans, used as a thickener and stabilizer.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Sodium Alginate,A thickening agent derived from seaweed.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Potassium Citrate,Potassium salt used as a food additive to control acidity.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Calcium Carbonate,Mineral compound used as a food additive and supplement.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Sorbic Acid,Preservative used in foods and cosmetics to prevent spoilage.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Benzoyl Peroxide,A bleaching agent used in food processing and acne treatment.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Ammonium Bicarbonate,Leavening agent used in baking.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Citric Acid,Organic acid used to add tartness and as a preservative.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Lactic Acid,Organic acid used as a preservative and pH regulator.,[],https://www.who.int/teams/nutrition-and-food-safety
+Malic Acid,"Organic acid found in fruits, used for sourness and preservation.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Tartaric Acid,Organic acid used to stabilize wine and as a food additive.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Lecithins,"Fatty substances derived from plants, used as emulsifiers.",[],https://www.who.int/teams/nutrition-and-food-safety
+Propionic Acid,"Organic acid used as a preservative, particularly in baked goods.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Phosphoric Acid,"Acid used in food, beverages, and as a cleaning agent.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Calcium Disodium EDTA,Used as a preservative and stabilizer in food.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Tert-Butylhydroquinone,Antioxidant used to preserve fats and oils in food.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Stearic Acid,Fatty acid used in the food industry and cosmetics.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Ammonium Sulfate,Inorganic salt used in fertilizers and as a food additive.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Sodium Erythorbate,A preservative that prevents the oxidation of fats and oils.,[],https://www.who.int/teams/nutrition-and-food-safety
+Ascorbic Acid,"Vitamin C, used as an antioxidant and preservative in food.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Glyceryl Monostearate,Emulsifier used to combine oil and water in food products.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Sodium Tripolyphosphate,Used as a preservative and emulsifier in seafood and meat.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Magnesium Stearate,Used as a lubricant and emulsifier in food and pharmaceuticals.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Polyethylene Glycol,"Used as a thickener and emulsifier in foods, cosmetics, and medicines.",[],https://www.who.int/teams/nutrition-and-food-safety
+Sodium Metabisulfite,"Preservative and antioxidant, used to preserve foods and beverages.","[""Sulphite Sensitivity""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Potassium Metabisulfite,"Used as a preservative and antioxidant, often in dried fruits.","[""Sulphite Sensitivity""]",https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Ethyl Vanillin,"Synthetic flavoring agent, used to mimic vanilla flavor.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Cellulose Gum,Used as a thickener and stabilizer in processed foods.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Microcrystalline Cellulose,Used as a binder and filler in food and pharmaceuticals.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Silicon Dioxide,Anti-caking agent used in powdered foods and supplements.,[],https://www.who.int/teams/nutrition-and-food-safety
+Calcium Stearate,Used as a lubricant and emulsifier in food production.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Mono- and Diglycerides,Emulsifiers used to blend ingredients in food.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Sodium Bicarbonate,Leavening agent used in baking and as an antacid.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Caramel Color,"Colorant made by heating sugar, used in beverages and foods.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Annatto Extract,Natural food colorant derived from seeds of the achiote tree.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Cochineal Extract,"Red colorant derived from insects, used in food and cosmetics.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Beta-Carotene,"Pro-vitamin A, used as a colorant and antioxidant.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Lutein,"Antioxidant found in green leafy vegetables, used for eye health.",[],https://www.who.int/teams/nutrition-and-food-safety
+Lycopene,"Antioxidant found in tomatoes, used for health and color.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Pectin,"Natural gelling agent extracted from fruits, used in jams.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Glutamic Acid,"Amino acid, often used as a flavor enhancer (MSG).",[],https://www.who.int/teams/nutrition-and-food-safety
+Citral,Citrus-scented compound used as a flavoring agent.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Linalool,"Floral-scented compound, used as a fragrance and flavor.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Methylcellulose,"Derived from cellulose, used as a thickener and emulsifier.",[],https://www.who.int/teams/nutrition-and-food-safety
+Malt Extract,"Extracted from barley, used for its sweetness and color.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+High Maltose Corn Syrup,"Syrup containing high levels of maltose, used as a sweetener.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Isomalt,"Sugar substitute made from beets, used in sugar-free products.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Inulin,Prebiotic fiber used to aid digestion and as a sugar substitute.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Natural Tocopherols ,"Antioxidants found in vegetable oils, used to preserve food.",[],https://www.who.int/teams/nutrition-and-food-safety
+Nicotine,A highly addictive chemical found in tobacco.,"[""Heart Problems"", ""Cancer""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Tar,"A toxic substance in tobacco smoke, contributing to cancer and lung disease.","[""Cancer""]",https://www.who.int/teams/nutrition-and-food-safety
+Acetone,Found in tobacco smoke and is a solvent in some cosmetic products.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Ammonia,Used in tobacco products to enhance nicotine delivery.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Formaldehyde,A carcinogen used in tobacco and pan masala products.,"[""Cancer""]",https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Carbon Monoxide,A harmful gas produced from burning tobacco and pan masala.,"[""Heart Problems""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Acetaldehyde,A chemical in tobacco smoke and pan masala linked to cancer and addiction.,"[""Cancer"", ""Heart Problems""]",https://www.who.int/teams/nutrition-and-food-safety
+Ethanol (Alcohol),"The intoxicating compound in alcoholic beverages, can affect brain function.","[""Heart Problems"", ""Diabetes""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Tannins,"Astringent compounds found in alcohol and pan masala, can cause irritation.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Sugar,Often used in alcoholic beverages to enhance taste.,"[""Diabetes""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Caramel,"Coloring agents used in alcoholic beverages, especially in liquors.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Caffeine,Found in some alcohol mixtures like caffeinated beers and drinks.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Betel Leaves,"Main ingredient in pan masala, with stimulant effects.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Areca Nut,"The main stimulant in pan masala, linked to mouth and throat cancers.","[""Cancer""]",https://www.who.int/teams/nutrition-and-food-safety
+Slaked Lime,Often used in pan masala to enhance the effects of other ingredients.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Cardamom,"A flavoring in pan masala, often used for its digestive properties.",[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Cloves,Spices used in pan masala for their aromatic properties.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Menthol,Often used in cigarettes and pan masala for its cooling effect.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Sodium Nitrite,Used as a preservative in processed tobacco products and in some alcoholic beverages.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Propylene Glycol,A humectant used in some cigarette brands and alcoholic drinks.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Benzene,"Found in tobacco smoke, linked to cancer and respiratory issues.","[""Cancer""]",https://www.who.int/teams/nutrition-and-food-safety
+Hydrogen Cyanide,A toxic compound found in cigarette smoke.,"[""Heart Problems"", ""Cancer""]",https://www.who.int/teams/nutrition-and-food-safety
+Maltodextrin,Often used in alcohol and pan masala as a filler or stabilizer.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Glycerin,"Used in some alcohol and cigarette products, can cause respiratory issues.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Sodium Chloride,"Commonly known as salt, used in processed pan masala and in alcohol drinks.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Sodium Benzoate,Preservative used in pan masala and alcoholic drinks.,[],https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Sulphur Dioxide,Used in alcoholic beverages to prevent oxidation.,"[""Sulphite Sensitivity""]",https://www.efsa.europa.eu/en/science/scientific-committee-and-panels/nda
+Tobacco,The plant used to create cigarettes and other products.,"[""Cancer"", ""Heart Problems""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Amaranth,"Rich in protein, fiber, and essential minerals. Helps in muscle growth and improves digestive health.","[""Gluten"", ""Soy""]",https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Asparagus,"High in fiber, vitamins A, C, and K, and folate. Promotes digestive health and reduces inflammation.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Capers,Low in calories and rich in antioxidants. Can help improve liver function and reduce blood sugar levels.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Chervil,"Contains vitamins A and C, and antioxidants. Supports immune system function and skin health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Coriander,"High in antioxidants and vitamins. Helps with digestion, reduces inflammation, and supports heart health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Edamame,"Packed with protein, fiber, and antioxidants. Supports muscle health and boosts the immune system.","[""Soy""]",https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Garbanzo Beans,"High in protein and fiber. Helps with weight management, improves digestive health, and lowers cholesterol.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Guava,"Rich in vitamin C and antioxidants. Boosts immunity, aids digestion, and improves skin health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Jalapenos,"High in vitamin C and capsaicin. Can boost metabolism, reduce pain, and improve heart health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Kiwifruit,"High in vitamin C, fiber, and antioxidants. Aids digestion, supports immune function, and improves skin health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Mahi Mahi,Low in fat and high in protein. Supports muscle growth and provides heart-healthy omega-3 fatty acids.,"[""Fish""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Nutmeg,Contains antioxidants and anti-inflammatory compounds. Supports digestion and can improve sleep quality.,[],https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Peaches,"High in vitamins A and C, fiber, and antioxidants. Supports skin health, digestion, and immune function.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Pomegranate,"Rich in antioxidants, vitamins C and K. Improves heart health, reduces inflammation, and boosts immunity.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Rhubarb,High in fiber and antioxidants. Supports digestive health and may reduce the risk of certain diseases.,[],https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Savory,Contains antioxidants and essential minerals. Supports digestive health and reduces inflammation.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Swiss Chard,"High in vitamins A, C, and K, and antioxidants. Supports eye health, reduces inflammation, and promotes bone health.",[],https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Turnips,"Low in calories and rich in fiber and vitamin C. Supports weight loss, digestion, and immune function.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Zucchini,"High in vitamins A and C, and antioxidants. Promotes hydration, supports digestion, and helps in weight management.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Chestnuts,"Rich in carbohydrates, fiber, and antioxidants. Supports heart health and provides sustained energy.",[],https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Dandelion Greens,"High in vitamins A, C, and K, and antioxidants. Supports liver function, digestive health, and immune system.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Goji Berries,"Packed with antioxidants, vitamins C and A. Improves immune function, skin health, and eye health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Kohlrabi,"High in vitamin C and fiber. Supports digestion, promotes heart health, and boosts immunity.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Passion Fruit,"Rich in vitamin C, fiber, and antioxidants. Helps improve digestion and supports immune health.",[],https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Rutabaga,"High in fiber, vitamin C, and antioxidants. Supports digestive health, boosts immunity, and promotes heart health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Tamarind,"Rich in antioxidants, vitamin C, and magnesium. Supports digestive health, aids in detoxification, and boosts immunity.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Trout,"A type of fish, rich in omega-3 fatty acids and protein. Supports heart health, brain function, and muscle growth.","[""Fish""]",https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Wild Rice,"High in fiber, antioxidants, and minerals. Supports digestive health, boosts energy levels, and improves heart health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Arrowroot,"A starchy root vegetable. Easily digestible, often used to treat digestive issues.",[],https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Basil,"High in antioxidants, vitamins A and K. Supports immune health, reduces inflammation, and improves digestion.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Cashews,"Rich in healthy fats, protein, and vitamins. Supports heart health, bone health, and boosts energy.","[""Tree Nut""]",https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Cilantro,"Contains vitamins A, C, and K, and antioxidants. Supports digestion, detoxifies the body, and improves heart health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Cornmeal,"Made from ground corn, rich in carbohydrates and fiber. Supports energy levels and digestive health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Endive,"A leafy green vegetable, high in fiber and vitamins A and K. Supports digestive health and provides antioxidants.",[],https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Garam Masala,A blend of spices commonly used in Indian cuisine. Contains antioxidants and supports digestion.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Halibut,"A type of fish, rich in omega-3 fatty acids and protein. Supports muscle growth, heart health, and brain function.","[""Fish""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Kale,"High in vitamins A, C, and K, fiber, and antioxidants. Supports immune health, bone health, and heart health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Leeks,"A type of vegetable rich in vitamins A, C, and K. Supports digestive health and reduces the risk of chronic diseases.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Miso,A fermented paste made from soybeans. Rich in probiotics and antioxidants. Supports digestive health and boosts immunity.,"[""Soy""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Okra,"High in fiber and antioxidants. Supports digestion, heart health, and reduces inflammation.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Pears,Rich in dietary fiber and vitamin C. Supports digestive health and immune function.,[],https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Radicchio,"Contains fiber, antioxidants, and vitamin K. Supports digestion and helps reduce inflammation.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Rosemary,High in antioxidants and anti-inflammatory properties. Supports digestion and boosts memory.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Shallots,"Rich in antioxidants and vitamin C. Supports immune health, heart health, and digestion.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Tilapia,"A type of fish, low in fat and high in protein. Supports muscle growth and heart health.","[""Fish""]",https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Vanilla Bean,Contains antioxidants and essential oils. Supports digestive health and has anti-inflammatory properties.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Adzuki Beans,"High in protein, fiber, and antioxidants. Supports digestion, boosts energy, and reduces cholesterol.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Chili Powder,"Contains antioxidants and capsaicin. Supports metabolism, boosts immune function, and reduces inflammation.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Dates,"High in fiber, vitamins, and minerals. Supports digestive health, energy levels, and heart health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Horseradish,Contains antioxidants and anti-inflammatory compounds. Supports digestion and boosts immunity.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Lima Beans,"High in fiber, protein, and essential vitamins. Supports digestive health, heart health, and weight management.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Pepitas,"Rich in magnesium, zinc, and healthy fats. Supports heart health, bone health, and reduces inflammation.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Salsify,A root vegetable high in fiber and antioxidants. Supports digestive health and boosts immunity.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Taro,High in fiber and essential nutrients. Supports digestive health and helps regulate blood sugar levels.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Wasabi,Contains antioxidants and has anti-inflammatory properties. Supports digestion and boosts metabolism.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Yams,"Rich in fiber, vitamins A and C. Supports digestive health, boosts immune function, and reduces inflammation.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Artichokes,"High in fiber and antioxidants. Supports liver health, digestion, and reduces cholesterol.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Bok Choy,"Rich in vitamins A, C, and K. Supports immune health, bone health, and reduces inflammation.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Celery,"High in vitamins A, K, and C, and fiber. Supports digestive health, reduces inflammation, and improves hydration.",[],https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Cocoa Butter,Contains antioxidants and healthy fats. Supports skin health and reduces inflammation.,[],https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Couscous,"Made from semolina wheat, a good source of carbohydrates and fiber. Supports energy levels and digestive health.","[""Gluten""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Fennel,"Contains antioxidants, fiber, and vitamin C. Supports digestion, reduces inflammation, and promotes heart health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Goat Cheese,"Rich in protein, calcium, and healthy fats. Supports bone health and provides probiotics for gut health.","[""Dairy""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Harissa,A spicy North African chili paste. Contains antioxidants and supports digestion and metabolism.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Kefir,"A fermented dairy product rich in probiotics. Supports gut health, digestion, and boosts immunity.","[""Dairy""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Lemongrass,"Contains antioxidants and essential oils. Supports digestion, reduces inflammation, and improves skin health.",[],https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Mustard Greens,"Rich in vitamins A, C, and K. Supports digestive health, reduces inflammation, and boosts immunity.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Parmesan Cheese,A hard cheese high in protein and calcium. Supports bone health and provides probiotics for gut health.,"[""Dairy""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Peppermint,"Contains menthol, which aids digestion and has anti-inflammatory properties. Boosts mental clarity and soothes headaches.",[],https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Radishes,"High in fiber and vitamin C. Supports digestive health, boosts immunity, and reduces inflammation.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Saffron,Contains antioxidants and compounds that improve mood and promote heart health.,[],https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Snow Peas,"High in vitamins A, C, and K. Supports immune health, digestion, and bone health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Tomatillos,"Rich in vitamins C and K, and antioxidants. Supports immune health, digestion, and heart health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Watercress,"High in vitamins A, C, and K, and antioxidants. Supports immune function, bone health, and digestion.",[],https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Bulgur,"A whole grain rich in fiber, vitamins, and minerals. Supports digestion and heart health.",[],https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Cranberries,"Rich in antioxidants and vitamin C. Supports immune health, heart health, and urinary tract health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Elderberries,Contain antioxidants and vitamins A and C. Support immune function and reduce inflammation.,[],https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Jicama,"High in fiber, vitamin C, and antioxidants. Supports digestive health, immune function, and blood sugar regulation.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Mulberries,"Rich in vitamins C and K, and antioxidants. Supports immune health, digestion, and heart health.",[],https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Plums,"Contain antioxidants and vitamin C. Support immune function, digestive health, and improve skin health.",[],https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Seaweed,"High in iodine, calcium, and antioxidants. Supports thyroid function, immune health, and skin health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Teff,"A gluten-free grain rich in protein, fiber, and iron. Supports digestion, energy levels, and bone health.","[""Gluten""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Whey,"A protein-rich dairy product. Supports muscle growth, immune health, and recovery.","[""Dairy""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Yucca,"A starchy root vegetable. High in fiber and antioxidants. Supports digestion, reduces inflammation, and boosts energy.",[],https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Arugula,"Rich in vitamins A, C, and K, and antioxidants. Supports immune health, bone health, and digestive health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Brussels Sprouts,"High in fiber, vitamin C, and antioxidants. Supports digestive health, immune health, and reduces inflammation.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Cheddar Cheese,"High in protein, calcium, and healthy fats. Supports bone health and gut health.","[""Dairy""]",https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Collard Greens,"Rich in vitamins A, C, and K. Supports immune health, bone health, and digestive health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Cream Cheese,A dairy product rich in fat and protein. Supports gut health and provides energy.,"[""Dairy""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Fontina Cheese,A semi-soft cheese rich in calcium and protein. Supports bone health and provides probiotics for gut health.,"[""Dairy""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Green Beans,"High in fiber, vitamins A, C, and K. Supports immune health, heart health, and digestion.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Hemp Seeds,"Rich in protein, healthy fats, and minerals. Support heart health, muscle growth, and reduce inflammation.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Kelp,"High in iodine, calcium, and antioxidants. Supports thyroid health, digestion, and immune function.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Lychee,"High in vitamin C, antioxidants, and fiber. Supports immune function, digestion, and skin health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Navy Beans,"High in fiber, protein, and minerals. Support digestive health, heart health, and weight management.",[],https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Parsley,"Rich in vitamins A, C, and K, and antioxidants. Supports immune health, digestion, and skin health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Persimmons,"Rich in fiber, vitamins A and C, and antioxidants. Support digestive health, immune function, and reduce inflammation.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Raspberries,"High in fiber, antioxidants, and vitamin C. Support immune health, heart health, and digestive health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Sage,"Contains antioxidants, vitamins, and essential oils. Supports digestion, reduces inflammation, and improves cognitive function.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Sorrel,"High in vitamin C and antioxidants. Supports immune health, digestion, and skin health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Turmeric,"Contains curcumin, an anti-inflammatory compound. Supports joint health, digestion, and immune function.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Watermelon,"Rich in vitamins A and C. Supports hydration, heart health, and skin health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Caraway Seeds,"Contains antioxidants and fiber. Supports digestion, reduces inflammation, and improves gut health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Cucumber,"High in water content and vitamin K. Supports hydration, skin health, and digestive health.",[],https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Fenugreek,"Rich in fiber, protein, and antioxidants. Supports blood sugar regulation, digestion, and lactation.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Kasha,"A grain rich in protein, fiber, and antioxidants. Supports heart health, digestion, and weight management.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Nori,"A type of seaweed rich in iodine, calcium, and antioxidants. Supports thyroid health, immune function, and skin health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Quail Eggs,"High in protein, vitamins, and healthy fats. Supports muscle growth, immune health, and brain function.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Spaghetti Squash,"Low in calories and high in fiber. Supports digestive health, weight management, and immune function.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Tempeh,"A fermented soy product rich in protein and probiotics. Supports muscle growth, gut health, and immune function.","[""Soy""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+White Beans,"High in fiber, protein, and minerals. Support digestive health, heart health, and weight management.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Zaatar,A blend of herbs and spices. Contains antioxidants and has anti-inflammatory properties. Supports digestion and immune function.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Acai Berries,"High in antioxidants, fiber, and vitamin C. Support immune health, skin health, and digestive health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Anchovies,A small fish high in omega-3 fatty acids and protein. Supports heart health and muscle growth.,"[""Fish""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Bamboo Shoots,"Low in calories and high in fiber. Supports digestion, immune health, and weight management.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Beet Greens,"Rich in vitamins A, C, and K. Support immune health, bone health, and reduce inflammation.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Blood Oranges,"High in vitamin C and antioxidants. Support immune health, skin health, and reduce inflammation.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Canary Melon,"High in vitamin C and antioxidants. Supports hydration, immune health, and skin health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Cassava Flour,A gluten-free flour rich in carbohydrates. Supports energy levels and digestive health.,"[""Gluten""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Chinese Five Spice,A blend of spices with antioxidant properties. Supports digestion and improves metabolism.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Coffee Beans,"Rich in caffeine and antioxidants. Supports mental clarity, energy levels, and reduces inflammation.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Curry Leaves,Contain antioxidants and have anti-inflammatory properties. Support digestion and boost immunity.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Dragon Fruit,"High in vitamin C, antioxidants, and fiber. Supports immune health, digestion, and skin health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Emmer Wheat,A type of ancient wheat high in fiber and protein. Supports digestive health and energy levels.,"[""Gluten""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Galangal,A root with anti-inflammatory properties. Supports digestion and boosts metabolism.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Gooseberries,"Rich in antioxidants and vitamin C. Support immune health, skin health, and reduce inflammation.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Herring,"A type of fish high in omega-3 fatty acids and protein. Supports heart health, brain function, and joint health.","[""Fish""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Jerusalem Artichokes,"High in fiber and antioxidants. Support digestion, immune health, and reduce inflammation.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Kumquat,"High in vitamin C and antioxidants. Supports immune health, skin health, and digestive health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Lotus Root,"Rich in fiber, vitamins, and antioxidants. Supports digestion, immune health, and skin health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Manchego Cheese,A Spanish cheese high in protein and calcium. Supports bone health and muscle growth.,"[""Dairy""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Monk Fruit,A natural sweetener with zero calories. Supports blood sugar regulation and provides antioxidants.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Nigella Seeds,Contains antioxidants and has anti-inflammatory properties. Supports digestion and reduces inflammation.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Peppermint Oil,"Contains menthol, which has soothing and digestive properties. Supports digestion and reduces headaches.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Plantains,"High in fiber, potassium, and vitamin C. Supports digestive health, heart health, and immune function.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Purslane,"Rich in omega-3 fatty acids and antioxidants. Supports heart health, skin health, and reduces inflammation.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Ras El Hanout,A blend of spices with antioxidant and anti-inflammatory properties. Supports digestion and metabolism.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Roasted Barley,High in fiber and B vitamins. Supports digestive health and energy levels.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Sesame Flour,A gluten-free flour rich in fiber and healthy fats. Supports digestion and reduces inflammation.,"[""Sesame""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Smoked Salt,Adds flavor and contains trace minerals. Supports hydration and electrolyte balance.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Star Anise,Contains antioxidants and has anti-inflammatory properties. Supports digestion and immune health.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Tarragon,Rich in antioxidants. Supports digestion and has anti-inflammatory effects.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Tilapia Filets,"A type of fish rich in protein and omega-3 fatty acids. Supports heart health, muscle growth, and brain function.","[""Fish""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Water Chestnuts,"High in fiber, potassium, and antioxidants. Supports digestive health, heart health, and skin health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+White Radish,"Rich in vitamin C and antioxidants. Supports digestion, immune health, and skin health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Yellow Beets,"High in fiber, vitamins, and antioxidants. Supports digestive health, liver health, and skin health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Agar Agar,A gelatin substitute made from seaweed. Supports gut health and can aid in digestion.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Anise,Contains antioxidants and has anti-inflammatory properties. Supports digestion and metabolism.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Barberries,"Rich in vitamin C and antioxidants. Support immune health and digestion, and reduce inflammation.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Black Garlic,Contains antioxidants and has anti-inflammatory properties. Supports heart health and reduces inflammation.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Bok Wheat,"A type of grain high in fiber and protein. Supports digestion, heart health, and energy levels.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Candied Ginger,"Contains gingerol, which has anti-inflammatory properties. Supports digestion and reduces nausea.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Chayote,"High in fiber, vitamin C, and antioxidants. Supports digestive health, heart health, and skin health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Chinese Water Chestnuts,"High in fiber and antioxidants. Supports digestive health, heart health, and skin health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Cranberry Beans,"High in fiber, protein, and antioxidants. Supports digestive health, heart health, and weight management.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Daikon Radish,"Rich in vitamin C and antioxidants. Supports digestion, immune health, and skin health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Durian,"High in vitamins and healthy fats. Supports digestive health, heart health, and boosts energy.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Feijoa,"High in vitamin C and antioxidants. Supports immune health, skin health, and digestion.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Garden Peas,"Rich in protein, fiber, and vitamins. Supports digestive health, muscle growth, and heart health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Grapefruit,"Rich in vitamin C and antioxidants. Supports immune health, skin health, and weight management.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Hominy,"Made from corn, rich in fiber and vitamins. Supports digestion and energy levels.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Juniper Berries,Contains antioxidants and has anti-inflammatory properties. Supports digestion and immune health.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Labneh,"A strained yogurt, rich in protein and calcium. Supports bone health and digestive health.","[""Dairy""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Lupin Beans,"High in protein, fiber, and antioxidants. Supports muscle growth, digestive health, and heart health.","[""Legume""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Mango Butter,"Rich in vitamins A, C, and antioxidants. Supports skin health and reduces inflammation.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Morel Mushrooms,"Rich in vitamins, minerals, and antioxidants. Supports immune health and reduces inflammation.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Nonpareil Capers,High in antioxidants. Supports digestive health and reduces inflammation.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Persian Cucumbers,High in water content and low in calories. Supports hydration and digestive health.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Poblano Peppers,Rich in vitamin C and antioxidants. Supports immune health and skin health.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Quince,"High in fiber, vitamin C, and antioxidants. Supports digestive health, immune health, and skin health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Red Lentils,"Rich in protein, fiber, and antioxidants. Supports digestive health, muscle growth, and heart health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Rutabaga Leaves,Rich in fiber and vitamins. Supports digestive health and immune health.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Serrano Peppers,High in vitamin C and antioxidants. Supports immune health and skin health.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Sorghum Flour,Gluten-free flour high in fiber and protein. Supports digestive health and energy levels.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Sugar Snap Peas,"High in vitamins, fiber, and antioxidants. Supports digestive health, skin health, and immune function.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Thai Basil,Rich in antioxidants and has anti-inflammatory properties. Supports digestion and reduces inflammation.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Ube (Purple Yam),"Rich in fiber, antioxidants, and vitamins. Supports digestive health, skin health, and immune function.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+White Asparagus,Low in calories and rich in antioxidants. Supports digestive health and heart health.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Whole Grain Sorghum,"High in fiber and antioxidants. Supports digestive health, energy levels, and heart health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Yellow Lentils,"High in protein and fiber. Supports digestive health, muscle growth, and heart health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Alfalfa Sprouts,"Rich in vitamins, minerals, and antioxidants. Supports immune health, skin health, and digestive health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Apricots,"High in vitamins A, C, and antioxidants. Supports eye health, immune health, and skin health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Barley Malt,"High in fiber and B vitamins. Supports digestive health, energy levels, and immune function.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Black Lentils,"Rich in protein, fiber, and antioxidants. Supports digestive health, muscle growth, and heart health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Breadfruit,"High in fiber, potassium, and antioxidants. Supports digestive health, heart health, and energy levels.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Cannellini Beans,"High in fiber, protein, and antioxidants. Supports digestive health, muscle growth, and heart health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Chia Flour,"High in fiber, protein, and omega-3 fatty acids. Supports digestive health, heart health, and energy levels.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Coconut Flour,Gluten-free flour rich in fiber and healthy fats. Supports digestive health and weight management.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Crème Fraîche,"A type of sour cream, rich in probiotics and fat. Supports digestive health and provides healthy fats.","[""Dairy""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Dashi,A Japanese stock made from fish and seaweed. Adds umami flavor and provides minerals.,"[""Fish""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Einkorn Wheat,An ancient wheat variety rich in fiber and protein. Supports digestive health and heart health.,"[""Gluten""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Finger Lime,Rich in vitamin C and antioxidants. Supports immune health and skin health.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Golden Beets,"High in vitamins, fiber, and antioxidants. Supports digestive health, liver health, and skin health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Grenadine,A syrup made from pomegranate. High in antioxidants and supports immune health.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Hubbard Squash,"High in vitamins A, C, and antioxidants. Supports eye health, immune health, and digestive health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Kaffir Lime,Rich in vitamin C and antioxidants. Supports immune health and skin health.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Laver Seaweed,"Rich in iodine, calcium, and antioxidants. Supports thyroid health, immune health, and skin health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Macadamia Oil,"High in healthy fats and antioxidants. Supports heart health, skin health, and reduces inflammation.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Marjoram,Contains antioxidants and has anti-inflammatory properties. Supports digestion and immune health.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Mulato Peppers,A mild chili pepper with a smoky flavor. Supports digestion and adds flavor to dishes.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Paprika,A spice made from dried peppers. Rich in antioxidants and supports immune health.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Pine Nuts,"High in healthy fats, protein, and antioxidants. Supports heart health and reduces inflammation.","[""Tree Nut""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Pomelo,A citrus fruit rich in vitamin C and antioxidants. Supports immune health and skin health.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Rainbow Chard,"A leafy green vegetable rich in vitamins A, C, and K. Supports immune health and bone health.",[],https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Red Miso,"A fermented soybean paste, rich in probiotics and protein. Supports digestive health and immune health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Satsuma Oranges,A type of mandarin orange rich in vitamin C. Supports immune health and skin health.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Shiso Leaves,"A herb used in Japanese cuisine, rich in antioxidants and vitamin C. Supports digestion and immune health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Spanish Mackerel,A fish high in omega-3 fatty acids and protein. Supports heart health and brain function.,"[""Fish""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Tamarillo,A tropical fruit rich in antioxidants and vitamins. Supports immune health and skin health.,[],https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Thai Eggplant,"A small, bitter eggplant variety. High in fiber and antioxidants. Supports digestive health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Ugli Fruit,A hybrid citrus fruit rich in vitamin C and antioxidants. Supports immune health and skin health.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+White Nectarines,A stone fruit rich in vitamins and antioxidants. Supports immune health and skin health.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Winter Melon,A melon variety rich in water and vitamins. Supports hydration and digestive health.,[],https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Yellow Squash,A summer squash rich in vitamins and fiber. Supports digestive health and heart health.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Almond Flour,A gluten-free flour made from almonds. High in protein and healthy fats. Supports heart health.,"[""Tree Nut""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Avocado Oil,"Rich in healthy fats and antioxidants. Supports heart health, skin health, and reduces inflammation.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Bay Leaves,"Used as a seasoning, rich in antioxidants. Supports digestion and reduces inflammation.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Black Sesame Seeds,"High in healthy fats, protein, and antioxidants. Supports heart health, skin health, and digestion.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Camembert Cheese,A soft cheese rich in probiotics and fat. Supports digestive health and provides healthy fats.,"[""Dairy""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Carob Powder,A chocolate substitute rich in fiber and antioxidants. Supports digestion and heart health.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Chinese Broccoli,"A leafy vegetable rich in vitamins A, C, and K. Supports immune health, skin health, and bone health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Coconut Sugar,A sugar alternative with a lower glycemic index. Supports stable energy levels.,[],https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Cress,"A peppery herb rich in vitamins A, C, and K. Supports immune health, skin health, and bone health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Dill,"An herb rich in antioxidants. Supports digestion, immune health, and reduces inflammation.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Elderflower,Used for its anti-inflammatory and antioxidant properties. Supports immune health and skin health.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Flageolet Beans,"A type of kidney bean, rich in protein and fiber. Supports digestive health and muscle growth.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Golden Berries,A fruit high in antioxidants and vitamin C. Supports immune health and skin health.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Havarti Cheese,A creamy cheese rich in probiotics and fat. Supports digestive health and provides healthy fats.,"[""Dairy""]",https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Jackfruit,A tropical fruit rich in fiber and vitamin C. Supports digestive health and immune health.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Katsuobushi,A type of dried fish used in Japanese cuisine. Rich in protein and omega-3 fatty acids.,"[""Fish""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Lovage,A herb with a flavor similar to celery. Supports digestion and has anti-inflammatory properties.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Mace,A spice derived from nutmeg. Supports digestion and has anti-inflammatory properties.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Melon Seeds,"High in healthy fats, protein, and fiber. Supports heart health and digestive health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Nectarines,A stone fruit rich in vitamins and antioxidants. Supports immune health and skin health.,[],https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Passionfruit Juice,A juice rich in antioxidants and vitamin C. Supports immune health and skin health.,[],https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Pinto Beans,"A legume rich in fiber, protein, and antioxidants. Supports digestive health, muscle growth, and heart health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Pork Belly,A fatty cut of pork rich in protein. Supports muscle growth and provides energy.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Rambutan,A tropical fruit rich in vitamin C and antioxidants. Supports immune health and skin health.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Redcurrants,"High in antioxidants and vitamin C. Supports immune health, skin health, and digestive health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Scamorza Cheese,A semi-soft cheese with a smoky flavor. Rich in fat and probiotics. Supports digestive health.,"[""Dairy""]",https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Smoked Paprika,A spice with a smoky flavor. Rich in antioxidants and supports immune health.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Split Peas,"A legume rich in protein and fiber. Supports digestive health, muscle growth, and heart health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Tangerines,A citrus fruit rich in vitamin C. Supports immune health and skin health.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Thai Lime Leaves,Used in Thai cuisine for flavor. Rich in antioxidants and supports digestion.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Wakame Seaweed,"Rich in iodine, calcium, and antioxidants. Supports thyroid health, immune health, and skin health.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+White Peaches,A stone fruit rich in vitamins and antioxidants. Supports immune health and skin health.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Yam Leaves,High in fiber and antioxidants. Supports digestive health and immune health.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Young Jackfruit,A fruit rich in fiber and antioxidants. Supports digestive health and immune health.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Propylene Glycol Alginate,"A food additive used as a stabilizer, emulsifier, and thickener. Supports texture and consistency in foods.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Sodium Stearoyl Lactylate,A food additive used as an emulsifier and stabilizer. Supports the texture and quality of baked goods.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Ammonium Persulfate,Used in food processing and as a bleaching agent. Aids in dough conditioning and bread-making.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Calcium Peroxide,Used as a food additive for its oxidizing properties. Supports the preservation and color of food.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Glucono Delta-Lactone,A food acidulant used as a preservative and to control pH in food. Supports shelf life extension.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Disodium Phosphate,A salt of phosphoric acid used to regulate acidity in processed foods. Supports texture and preservation.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Monocalcium Phosphate,A calcium salt used as a leavening agent in baking. Supports food texture and structure.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Sodium Aluminum Phosphate,A leavening agent used in food products like baking powder. Supports texture and rising in baked goods.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Titanium Oxide,A pigment used to whiten and brighten food products. Supports aesthetic appearance.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Butylated Hydroxyanisole,An antioxidant used to prevent fats and oils from going rancid. Supports food preservation.,"[""Heart Problems"", ""Cancer""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Sodium Citrate,A salt of citric acid used to control acidity in food and as a preservative. Supports flavor and texture.,[],https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Phosphoric Acid,An acidulant used to acidify foods and beverages. Supports pH control and preservation.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Polyphosphates,A group of salts used to retain moisture in foods. Supports texture and freshness.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Sorbitan Monostearate,An emulsifier and stabilizer used in food products. Supports texture and consistency.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Calcium Sulfate,A food additive used as a firming agent and to prevent caking. Supports food preservation.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Acetic Acid,A strong acid used to preserve foods and enhance flavors. Supports acidity and preservation.,[],https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Sodium Lauryl Sulfate,"A surfactant used in food processing, typically for cleaning purposes. Supports hygiene in food processing.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Magnesium Carbonate,A food additive used as an anticaking agent and acidulant. Supports texture and preservation.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Potassium Chloride,A salt used as a salt substitute and to regulate sodium intake. Supports flavor balance.,"[""Heart Problems"", ""Diabetes""]",https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Sodium Acid Pyrophosphate,Used as a sequestrant and to prevent discoloration in foods. Supports preservation and quality.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Calcium Silicate,A food additive used as an anticaking agent. Supports texture and consistency in powdered foods.,[],https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Magnesium Phosphate,A source of magnesium used in food processing. Supports nutritional value.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Sodium Hexametaphosphate,A salt used as a sequestrant in food. Supports the preservation and stability of food.,[],https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Potassium Sorbate,A preservative used to prevent the growth of molds and yeasts. Supports shelf life extension.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Calcium Lactate,A calcium salt used to fortify food with calcium. Supports bone health and nutrition.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Polyglycerol Polyricinoleate,An emulsifier used in food processing. Supports texture and consistency.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Dimethyl Dicarbonate,A food preservative used to prevent microbial contamination. Supports food safety.,[],https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Acetylated Distarch Adipate,A starch derivative used as a stabilizer in food products. Supports texture and consistency.,[],https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Tetrasodium Pyrophosphate,Used as a dispersing agent in food. Supports the texture and prevents clumping in food products.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Ferric Orthophosphate,A source of iron used in food fortification. Supports nutrition and helps prevent iron deficiency.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Silicon Dioxide,A food additive used as an anticaking agent. Supports texture and prevents clumping.,[],https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
+Calcium Propionate,A preservative used to prevent mold growth in baked goods. Supports shelf life extension.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Ethylene Glycol,A substance used as a humectant in food. Supports moisture retention.,[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Sodium Carboxymethyl Cellulose,A cellulose derivative used as a thickener and stabilizer in food. Supports texture and consistency.,[],https://www.data.gov.uk/dataset/d3586c23-ccd7-4c66-b21b-5d996f152015/allergy-alerts
