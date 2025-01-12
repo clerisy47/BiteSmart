@@ -22,6 +22,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
@@ -49,15 +50,21 @@ fun BottomAppBar(navController: NavController) {
                         contentDescription = "Localized description"
                     )
                 }
-                IconButton(onClick = {
+                IconButton(
+                    onClick = {
                     navController.navigate(route = NavigationScreens.UserDashboardScreen.name)
-                }) {
+                },
+                    modifier = Modifier.size(50.dp)
+                        .clip(shape = CircleShape)
+                ) {
                     Image(
-                        painter = painterResource(R.drawable.log_in_img_avatar),
+                        painter = painterResource(R.drawable.profile_img),
                         contentDescription = null,
                         modifier = Modifier
-                            .size(size = 80.dp)
-                            .clip(shape = CircleShape)
+                            .size(size = 70.dp)
+                            .clip(CircleShape),
+                        contentScale = ContentScale.Crop
+
 
                     )
                 }
