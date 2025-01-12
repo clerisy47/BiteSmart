@@ -19,11 +19,14 @@ GOOGLE_API_KEY = "AIzaSyBV_7pw611g6J19JzJCwWevKXGIfnVuEjg"
 
 def extract_ingredients(text: str):
     genai.configure(api_key=GOOGLE_API_KEY)
-    system_instruction = """Extract list of nutritional information contents inside the food. 
-        If the information has multiple words, make it 1 or 2 word.
+    system_instruction = """The prompt contains many words, out of the words identify ingredients and nutritional information. 
+        If any component has multiple words, make it 1 or 2 word.
         The word should be full and common version, if it is written in other language, translate to English, but display only one word.
-        If it is written in short form like Vit B for Vitamin B, then write more common word ie Vitamin. The output words must have first letter capital. ie it should not be palm oil or Palm oil, it should be Palm Oil. If some items has 0 gm composition, then it means that the item is not present. So, don't consider it. Don't add extra information then mentioned.
-        Moreover, add extra information about the product as well that a user must know in extra_details."""
+        If it is written in short form like Vit B for Vitamin B, then write more common word ie Vitamin. 
+        The output words must have first letter capital. ie it should not be palm oil or Palm oil, it should be Palm Oil. 
+        If some items has 0 gm composition, then it means that the item is not present. So, don't consider it. 
+        Don't add extra words than what is mentioned in the text. 
+        Apart from the nutrtional components, if there are extra details that is written that user should know, write it in extra_details"""
 
     model = genai.GenerativeModel(
         "gemini-1.5-pro-latest", system_instruction=system_instruction
@@ -35,6 +38,7 @@ def extract_ingredients(text: str):
             response_mime_type="application/json", response_schema=Information
         ),
     )
+    print(result.text)
     return result.text
 
 
@@ -61,7 +65,7 @@ async def delete_ingredient(name: str):
     return result.deleted_count
 
 async def find_missing(name: str):
-    is_present = await ingredients.find_one({"name": name})
+    is_present = await to_add.find_one({"name": name})
     if is_present:
         return True
     return False

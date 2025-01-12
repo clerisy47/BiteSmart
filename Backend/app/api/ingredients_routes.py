@@ -20,5 +20,6 @@ async def post_text(text: IngredientRequest):
             is_present = await find_missing(info)
             if(not is_present):
                 await add_missing(info)
+        print(info)
 
     return IngredientData(items=ing_lst, extra_details=result_json["extra_details"])
