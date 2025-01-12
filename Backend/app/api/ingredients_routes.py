@@ -7,7 +7,7 @@ import json
 router = APIRouter()
 
 
-@router.post("/get-informations/", response_model=IngredientData)
+@router.post("/get-information/", response_model=IngredientData)
 async def post_text(text: IngredientRequest):
     result_str = extract_ingredients(text.details)
     result_json = json.loads(result_str)
