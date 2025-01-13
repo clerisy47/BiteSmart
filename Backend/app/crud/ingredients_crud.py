@@ -14,7 +14,7 @@ class Information(typing.TypedDict):
     extra_details: str
 
 
-GOOGLE_API_KEY = "AIzaSyAdCgmSQ6NsTOtDVHd3QjcDB03DRxY5xbI"
+GOOGLE_API_KEY = "AIzaSyDKxKA7TJdNNgKxvqaLf_qi8tCUqLL_6Sc"
 
 
 def extract_ingredients(text: str):
