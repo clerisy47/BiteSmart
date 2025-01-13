@@ -19,13 +19,12 @@ GOOGLE_API_KEY = "AIzaSyDKxKA7TJdNNgKxvqaLf_qi8tCUqLL_6Sc"
 
 def extract_ingredients(text: str):
     genai.configure(api_key=GOOGLE_API_KEY)
-    system_instruction = """The prompt contains many words, out of the words identify ingredients and nutritional information. 
-        If any component has multiple words, make it 1 or 2 word.
+    system_instruction = """The prompt contains many words, out of the words extract nutritional information and ingredients. 
+        If any information/ ingredients has multiple words, make it 1 or 2 word.
         The word should be full and common version, if it is written in other language, translate to English, but display only one word.
         If it is written in short form like Vit B for Vitamin B, then write more common word ie Vitamin. 
         The output words must have first letter capital. ie it should not be palm oil or Palm oil, it should be Palm Oil. 
         If some items has 0 gm composition, then it means that the item is not present. So, don't consider it. 
-        Don't add extra words than what is mentioned in the text. 
         If there are extra details that user should know, write it in extra_details"""
 
     model = genai.GenerativeModel(
