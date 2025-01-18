@@ -115,7 +115,11 @@ fun LogInScreen(
                                     if (enteredUsername == storedUsername && enteredPassword == storedPassword) {
                                         // Navigate to the user dashboard if credentials are correct
                                         withContext(Dispatchers.Main) {
-                                            navController.navigate(route = NavigationScreens.UserDashboardScreen.name)
+                                            if (userViewModel.isAllergiesCompleted()){
+                                                navController.navigate(route = NavigationScreens.UserDashboardScreen.name)
+                                            }else{
+                                                navController.navigate(route = NavigationScreens.AllergiesScreen.name)
+                                            }
                                             Toast.makeText(
                                                 navController.context,
                                                 "Log In Successfully",

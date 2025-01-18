@@ -1,5 +1,6 @@
 package com.app.bitesmart.navigation
 
+import AllergiesScreen
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 import androidx.lifecycle.viewmodel.compose.viewModel
@@ -23,6 +24,9 @@ import java.nio.charset.StandardCharsets
 @Composable
 fun BiteSmartNavigation() {
     val navController = rememberNavController()
+    val context = LocalContext.current
+    val userViewModel: UserViewModel = viewModel(factory = UserViewModelFactory(context))
+
     NavHost(
         navController = navController, startDestination = NavigationScreens.LogInScreen.name
     ) {
@@ -32,13 +36,7 @@ fun BiteSmartNavigation() {
         composable(route = NavigationScreens.SignUpScreen.name) {
             SignUpScreen(navController = navController)
         }
-        composable(route = NavigationScreens.UserDashboardScreen.name) { _ ->
-            val context = LocalContext.current
-            val userViewModel: UserViewModel = viewModel(
-                factory = UserViewModelFactory(context)
-            )
-
-            // Pass the userViewModel to the screen
+        composable(route = NavigationScreens.UserDashboardScreen.name) {
             UserDashboardScreen(navController = navController, userViewModel = userViewModel)
         }
         composable(route = NavigationScreens.HistoryScreen.name) {
@@ -53,15 +51,13 @@ fun BiteSmartNavigation() {
         ) { backStackEntry ->
             val encodedResponseText = backStackEntry.arguments?.getString("responseText") ?: ""
             val responseText = URLDecoder.decode(encodedResponseText, StandardCharsets.UTF_8.toString())
-
-            IngredientsScreen(
-                navController = navController,
-                responseText = responseText
-            )
+            IngredientsScreen(navController = navController, responseText = responseText)
         }
         composable(route = NavigationScreens.HistoryDetailsScreen.name) {
             HistoryDetailsScreen(navController = navController)
         }
+        composable(route = NavigationScreens.AllergiesScreen.name) {
+            AllergiesScreen(navController = navController)
+        }
     }
 }
-

@@ -2,7 +2,6 @@ package com.app.bitesmart.screens
 
 
 import android.widget.Toast
-import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.horizontalScroll
@@ -20,6 +19,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
@@ -55,8 +55,10 @@ fun UserDashboardScreen(
     userViewModel: UserViewModel
 ) {
     val username = remember { mutableStateOf("Loading...") }
+    val allergies = remember { mutableStateOf<List<String>>(emptyList()) }
     LaunchedEffect(key1 = true) {
         username.value = userViewModel.getUsername()
+        allergies.value = userViewModel.getAllergies()
     }
     val context = LocalContext.current
     val scrollState = rememberScrollState()
@@ -140,7 +142,7 @@ fun UserDashboardScreen(
                                             verticalArrangement = Arrangement.spacedBy(8.dp)
                                         ) {
                                             Text(text = "Scans")
-                                            Text(text = "80")
+                                            Text(text = "30")
                                         }
                                     }
                                     Card(
@@ -154,7 +156,7 @@ fun UserDashboardScreen(
                                             verticalArrangement = Arrangement.spacedBy(8.dp)
                                         ) {
                                             Text(text = "Allergies")
-                                            Text(text = "10")
+                                            Text(text = "${allergies.value.size}")
                                         }
                                     }
                                 }
@@ -168,20 +170,65 @@ fun UserDashboardScreen(
                 Column(
                     modifier = Modifier
                         .fillMaxSize()
-                        .padding(top = 60.dp)
                         .padding(16.dp)
-                        .verticalScroll(scrollState)
+                        .padding(top = 60.dp)
                 ) {
-                    HealthScoreSection()
+//                    Text("Allergies:", style = MaterialTheme.typography.titleMedium)
+//                    allergies.value.forEach { allergy ->
+//                        Text("• $allergy", style = MaterialTheme.typography.bodyMedium)
+//                    }
 
-                }
+                        Column(
+                            modifier = Modifier.padding(16.dp)
+                                .padding(top = 16.dp)
+                        ) {
+                            Text("Health Conditions", style = MaterialTheme.typography.titleLarge)
+
+                            // Conditionally show "NONE" if the allergies list is empty
+                            if (allergies.value.isEmpty()) {
+                                Text("NONE", style = MaterialTheme.typography.bodyMedium)
+                            } else {
+                                // Horizontal scrollable row for allergies
+                                Row(
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .horizontalScroll(rememberScrollState()),
+                                    horizontalArrangement = Arrangement.spacedBy(8.dp)
+                                ) {
+                                    // Create a card for each allergy
+                                    allergies.value.forEach { allergy ->
+                                        Card(
+                                            modifier = Modifier
+                                                .height(50.dp)
+                                                .padding(4.dp),
+                                            shape = RoundedCornerShape(16.dp),
+                                            elevation = CardDefaults.cardElevation(4.dp),
+                                            colors = CardDefaults.elevatedCardColors()
+                                        ) {
+                                            Box(
+                                                modifier = Modifier
+                                                    .fillMaxSize()
+                                                    .padding(8.dp),
+                                                contentAlignment = Alignment.Center
+                                            ) {
+                                                Text(
+                                                    text = allergy,
+                                                    style = MaterialTheme.typography.bodyMedium
+                                                )
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        HealthScoreSection()
 
             }
         }
     }
 }
-
-
+    }
 @Composable
 fun HealthScoreSection() {
     Column(

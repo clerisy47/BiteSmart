@@ -45,7 +45,7 @@ fun IngredientColumn(
     ) {
         items(ingredientList) { ingredient ->
             var isExpanded by remember { mutableStateOf(false) }
-
+            var allergies = ingredient.allergies
             Surface(
                 modifier = Modifier.padding(top = 8.dp)
                     .animateContentSize (),
@@ -102,6 +102,14 @@ fun IngredientColumn(
                                 text = ingredient.source,
                                 style = MaterialTheme.typography.bodyMedium
                             )
+                            Text(
+                                text = "Allergies:",
+                                style = MaterialTheme.typography.labelLarge,
+                                modifier = Modifier.padding(top = 2.dp)
+                            )
+                            allergies.forEach { allergy ->
+                                Text("• $allergy", style = MaterialTheme.typography.bodyMedium)
+                            }
                         }
 
 

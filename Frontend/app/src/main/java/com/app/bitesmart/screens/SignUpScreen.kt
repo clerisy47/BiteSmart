@@ -83,6 +83,8 @@ fun SignUpScreen(
                             )
                             // Navigate to login or another screen after saving
                             navController.navigate(route = NavigationScreens.LogInScreen.name)
+                            Toast.makeText(context, "Sign up successful", Toast.LENGTH_SHORT).show()
+
                         } else {
                             // Show error message (confirm password mismatch)
                             Toast.makeText(context, "Confirm Password doesn't matches the password", Toast.LENGTH_SHORT).show()

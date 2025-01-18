@@ -3,6 +3,7 @@ package com.app.bitesmart.screens
 
 import android.content.Context
 import android.util.Log
+import android.widget.Toast
 import androidx.camera.core.CameraSelector
 import androidx.camera.core.ImageCapture
 import androidx.camera.lifecycle.ProcessCameraProvider
@@ -131,6 +132,7 @@ fun FoodScanScreen(
                             CaptureImageUseCase.captureImage(imageCapture, context, viewModel)
 
                             scope.launch {
+                                Toast.makeText(context, "Image is being processed!", Toast.LENGTH_LONG).show()
                                 // Adding delay to ensure the image is captured before recognition
                                 delay(2000)
 

@@ -37,6 +37,7 @@ fun IngredientsScreen(
     navController: NavController,
     responseText: String,
 ) {
+
     val (ingredientsList, extraDetails) = parseJsonResponse(responseText)
     Scaffold(
         modifier = modifier,
