@@ -1,0 +1,179 @@
+Ingredients,Description,Allergies,Verified From
+Corn Syrup,A sweetener made from cornstarch.,"['Corn', 'Diabetes']",https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Piper Nigrum,"Common black pepper, used as a spice.",['Asthma'],https://www.who.int/publications/i/item/B09009
+Piper Longum,"Long pepper, a spicier relative of black pepper.",['Diabetes'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Zingiber Officinale,"Ginger root, used in cooking and traditional medicine.",['Sulphites'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Preservative,Substance added to prevent spoilage.,['Preservatives'],https://www.who.int/publications/i/item/B09009
+Syzygium Aromaticum,"Clove, a spice used for flavoring and medicinal purposes.",['Tree Nut'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Cinnamomum Camphora,"Camphor, used in medicinal and aromatic applications.",['Wheat'],https://www.who.int/publications/i/item/B09009
+Mentha,"Mint, an aromatic herb used in cooking and medicine.",['Peanuts'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Zanthoxylum Anatum,"Used to cure stomach issues, toothache, chest infections, dental problems, digestive problems, and scabies; it is carminative and antiseptic.",['Pollen'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Fiber,"Dietary fiber, essential for digestion.",['Wheat'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Fat,Nutrient used for energy storage and metabolism.,['Diabetes'],https://www.who.int/publications/i/item/B09009
+Pepper,Generic term for spices like black or long pepper.,['Asthma'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Ginger,Common spice used for its flavor and medicinal properties.,['Dairy'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Clove Oil,"Oil extracted from cloves, used for medicine and flavoring.",['Sulphites'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Camphor,A waxy substance used in medicinal and aromatic applications.,['Soy'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Mint,Aromatic herb used for flavoring and medicinal purposes.,['Peanuts'],https://www.who.int/publications/i/item/B09009
+Gairik,Red ochre used in Ayurveda for healing and detoxification.,['Asthma'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Zanthoxylum Amatum,"Used to cure stomach issues, toothache, chest infections, dental problems, digestive problems, and scabies; it is carminative and antiseptic.",['Tree Nut'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Piper,"Refers to various pepper species (e.g., black, long pepper).",['Pollen'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Zingiber,Genus of plants including ginger.,['Peanuts'],https://www.who.int/publications/i/item/B09009
+Zanthoxylum,Genus known for its prickly ash and related species.,['Peanuts'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Syzygium,"Genus of plants, some species used in spice production.",['Sulphites'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Cinnamomum,"Genus of plants, including cinnamon.",['Pollen'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Timur,"Another name for long pepper, a spicy pepper variety.",['Peanuts'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Clove,A spice made from the dried flower buds of the clove tree.,['Peanuts'],https://www.who.int/publications/i/item/B09009
+Zanthoxylum Armatum,"A species in the prickly ash family, known for its aromatic properties.",['Asthma'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Black Pepper,"Commonly used spice, made from the dried fruit of Piper nigrum.",['Wheat'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Long Pepper,"A spicier relative of black pepper, commonly used in traditional medicine.",['Dairy'],https://www.who.int/publications/i/item/B09009
+Zanthoxylum Amatum,"A species within the prickly ash genus, known for its medicinal uses.",['Soy'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Prickly Ash,"Common name for trees in the Zanthoxylum genus, used in herbal remedies.",['Soy'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Mentha Species,"Genus of aromatic herbs, including mint species.",['Pollen'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Preservative,A substance added to prevent spoilage of food and products.,['Sulphites'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Gairic Powder,Used for color and aesthetic in traditional food preparations.,['Asthma'],https://www.who.int/publications/i/item/B09009
+Dashmool,"An herbal formulation used in Ayurvedic medicine, typically involving ten roots.",['Sulphites'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Bala,"A plant used in Ayurvedic medicine, often used for its restorative properties.",['Pollen'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Mudgaparni,A traditional medicinal plant used in Ayurveda.,['Tree Nut'],https://www.who.int/publications/i/item/B09009
+Mashaparni,An Ayurvedic herb known for its healing properties.,['Peanuts'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Shring,Likely a term for a medicinal herb used in traditional practices.,['Pollen'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Tamalaki,"A traditional herb, also known as Amalaki, used in Ayurvedic medicine for its rejuvenating properties.",['Wheat'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Draksha,"Another name for grapes, used in traditional medicine for its restorative properties.",['Soy'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Pushkara,A herb used in Ayurvedic medicine for its detoxifying and healing properties.,['Sulphites'],https://www.who.int/publications/i/item/B09009
+Haritaki,"An herb known for its cleansing properties, used in Ayurvedic detox and digestion.",['Soy'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Guduchi,A medicinal herb used in Ayurveda for boosting immunity and detoxifying the body.,['Peanuts'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Phura,"Likely a traditional herb used in healing, but no specific details available.",['Soy'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Musta,"A medicinal plant used for digestive issues, part of Ayurvedic treatments.",['Gluten'],https://www.who.int/publications/i/item/B09009
+Punarnava,"A herb known for its diuretic and anti-inflammatory properties, used in Ayurvedic practices.",['Dairy'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Utpala,"A plant used in traditional medicine, often associated with detox and skin health.",['Pollen'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Vasa,"An herb used for its respiratory health benefits, especially in Ayurvedic medicine.",['Peanuts'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Yashti,"A medicinal herb used for its soothing and healing properties, especially for throat health.",['Sulphites'],https://www.who.int/publications/i/item/B09009
+Kaknasika,"An Ayurvedic herb used for its therapeutic properties, promoting balance and wellness in the body.",['Wheat'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Verahi,Likely a traditional medicinal plant used for various health benefits.,['Dairy'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Ashwagandha,"A popular adaptogen, known for its ability to reduce stress and improve energy levels.",['Pollen'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Shatavar,A plant used in Ayurvedic medicine to support female reproductive health in traditional medicine.,['Soy'],https://www.who.int/publications/i/item/B09009
+Kshira,"A term often referring to milk, used in Ayurveda for its nourishing and rejuvenating properties.",['Dairy'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Vidari,"A root herb used in Ayurvedic medicine, known for its rejuvenating effects.",['Asthma'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Amalaki,"Known as Indian gooseberry, it is used in Ayurveda for its potent antioxidant properties.",['Sulphites'],https://www.who.int/publications/i/item/B09009
+Ghrit,"Clarified butter, commonly used in Ayurvedic treatments for its nourishing properties.",['Dairy'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Sharkara,"A type of sugar, often used in Ayurvedic formulations for its sweetening and medicinal properties.",['Diabetes'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Tugakshin,"No specific description available, likely a traditional herb.",['Peanuts'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Abhrak,"A traditional Ayurvedic preparation of mica, used for strengthening the body.",['Wheat'],https://www.who.int/publications/i/item/B09009
+Bhasma,"Ayurvedic metallic or mineral preparations, often used for therapeutic purposes.",['Asthma'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Mukta,"Pearls, used in Ayurveda for their restorative and skin health properties.",['Soy'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Shukti,"A shell used in traditional medicine, especially in Ayurveda for its mineral content.",['Asthma'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Samoraha,"No specific description available, likely a traditional herb.",['Sulphites'],https://www.who.int/publications/i/item/B09009
+Karbh,"Likely referring to a medicinal herb, but no specific description available.",['Peanuts'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Pippali,A type of long pepper used in Ayurveda for improving digestion and circulation.,['Tree Nut'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Tvak,"The bark of certain trees, often used for its medicinal properties.",['Dairy'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Tejapatra,"Leaves of the cinnamon tree, used in Ayurvedic medicine for flavoring and medicinal benefits.",['Peanuts'],https://www.who.int/publications/i/item/B09009
+Kakatshringi,A plant used in traditional medicine for its various healing properties.,['Peanuts'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Ulpala,"A traditional medicinal plant, no specific description available.",['Sulphites'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Yashtimadhu,"Known as licorice root, used in Ayurveda for its soothing properties, especially for the throat.",['Peanuts'],https://www.who.int/publications/i/item/B09009
+Varah,"Likely a medicinal plant, no specific description available.",['Pollen'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Shatavari,A plant used in Ayurvedic medicine to support female reproductive health and balance hormones.,['Wheat'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Ghrita,Clarified butter used in Ayurvedic treatments for nourishing and rejuvenating.,['Dairy'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Abhrak Bhasma,"A traditional Ayurvedic preparation made from mica, used to strengthen the body and mind.",['Soy'],https://www.who.int/publications/i/item/B09009
+Shukti Pishti,"Powdered shell, used in Ayurvedic medicine, typically for its mineral properties.",[],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Swarna,"Gold, used in Ayurvedic treatments for its rejuvenating and revitalizing properties.",['Pollen'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Vanga Bhasma,"An Ayurvedic preparation made from tin, used for its healing and medicinal properties.",['Tree Nut'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Shringi,"Likely a plant or herb used in traditional medicine, no specific description available.",['Sulphites'],https://www.who.int/publications/i/item/B09009
+Eranda,"Castor oil, used in Ayurveda for its detoxifying and laxative properties.",['Sulphites'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Triphala,"A blend of three fruits, used in Ayurvedic medicine for detoxification and digestion.",['Soy'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Varahikanda,Likely refers to a plant or root used in traditional medicine. No specific details available.,['Dairy'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Udgaparni,"Likely a traditional herb used in Ayurveda, no specific description available.",['Asthma'],https://www.who.int/publications/i/item/B09009
+Kakatshringi,A plant used in traditional medicine for its various healing properties.,['Tree Nut'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Karctura,"Likely refers to a traditional medicinal herb, but no specific description available.",['Peanuts'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Varahi,"A medicinal plant, no specific description available.",['Soy'],https://www.who.int/publications/i/item/B09009
+Amalak,"Likely referring to Amalaki (Indian gooseberry), used in Ayurveda for its potent antioxidant properties.",['Asthma'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Til,"Sesame seeds, used in cooking and as a source of oil, known for their nutritional value.",['Sesame'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Tugaksh,No specific description available. Likely a medicinal plant.,['Soy'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Pippali,"Long pepper, used in traditional medicine to improve digestion and circulation.",['Sulphites'],https://www.who.int/publications/i/item/B09009
+Tejpala,"Leaves of the cinnamon tree, used for their medicinal properties.",['Peanuts'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Ela,"Cardamom, used in cooking and medicine for its aromatic flavor and digestive benefits.",['Tree Nut'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Suksham,"Likely refers to a traditional medicinal herb, no specific description available.",['Peanuts'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Shati,"A plant used in traditional medicine, no specific details available.",['Sulphites'],https://www.who.int/publications/i/item/B09009
+Twak,"The bark of cinnamon or related plants, used in traditional medicine for its healing properties.",['Wheat'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Nagkeshar,"A plant used in traditional medicine, often for its medicinal bark or flowers.",['Dairy'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Madhu,"Honey, used for its antimicrobial, soothing, and healing properties in traditional medicine.",['Honey'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Lavang,"Cloves, used as a spice and for their medicinal properties, especially for oral health.",[],https://www.who.int/publications/i/item/B09009
+Maricha,"Black pepper, used as a spice and for its medicinal properties.",[],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Karpoor,"Camphor, used in medicinal and aromatic applications.",['Asthma'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Karpoor,"Camphor, used in medicinal and aromatic applications.",['Asthma'],https://www.who.int/publications/i/item/B09009
+Dalchini,"Cinnamon, used as a spice and in traditional medicine for its health benefits.",['Sulphites'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Javitri,"Mace, a spice derived from the nutmeg plant, used in cooking and traditional medicine.",['Gluten'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Sugandhmukh,"Likely refers to a traditional medicinal herb, no specific description available.",['Dairy'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Tejpata,"Bay leaves, used in cooking and traditional medicine.",['Soy'],https://www.who.int/publications/i/item/B09009
+Samaraha,"Likely a traditional herb used in Ayurvedic medicine, no specific description available.",['Pollen'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Yog,"A term for traditional Ayurvedic or medicinal formulations, no specific herb identified.",['Peanuts'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Pishti,"A fine powder made from minerals or herbs, commonly used in Ayurvedic preparations.",['Asthma'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Munnaka,"Dried raisins, used for their digestive and rejuvenating properties in traditional medicine.",['Wheat'],https://www.who.int/publications/i/item/B09009
+Tankana,"Borax, a mineral used in Ayurvedic medicine for its detoxifying and healing properties.",['Corn'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Lauha,"Iron, used in Ayurvedic formulations to strengthen and balance the body.",['Sesame'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Kasis,"A preparation made from iron, used in Ayurvedic treatments for its restorative properties.",['Tree Nut'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Swarnamakshik,"A traditional Ayurvedic preparation made from copper and gold, used to restore vitality and strength.",['Peanut'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Gandhak,"Sulfur, used in Ayurvedic medicine for its purifying and healing properties.",['Sulphite'],https://www.who.int/publications/i/item/B09009
+Shuddh,Purified minerals or metals used in Ayurvedic formulations for therapeutic benefits.,['Barley'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Matsyandika,"A traditional medicine, typically derived from fish or marine sources.",[],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Shankh,"Conch shell, used in Ayurvedic medicine for its calming and detoxifying properties.",['Nuts'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Godanti,"A preparation made from gypsum, used in Ayurvedic medicine for its cooling and soothing effects.",['Milk'],https://www.who.int/publications/i/item/B09009
+Bhasma,"Ayurvedic mineral preparations, typically used in detoxification and healing processes.",['Tree Nuts'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Mukta,"Pearls, used in Ayurveda for their restorative and skin health properties.",['Wheat'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Pravala,"Coral, used in traditional medicine for its mineral content and healing properties.",['Soy'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Rajata,"Silver, used in Ayurvedic treatments for its rejuvenating and healing properties.",['Pollen'],https://www.who.int/publications/i/item/B09009
+Suvarna,"Gold, used in Ayurvedic treatments for its rejuvenating and revitalizing properties.",['Asthma'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Yashad,"Zinc, used in Ayurvedic medicine for its healing and mineral supplementation properties.",['Peanuts'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Loha,"Iron, used in Ayurvedic formulations for strengthening and balancing the body.",['Gluten'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Mandura,"A type of iron preparation, used in Ayurvedic medicine for its detoxifying and revitalizing effects.",['Dairy'],https://www.who.int/publications/i/item/B09009
+Vanga,"Tin, used in Ayurvedic treatments for its therapeutic properties, often for digestive health.",['Sulphites'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Flour,"Ground powder made from grains such as wheat, used as a staple in baking and cooking.",['Wheat'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Groundnut,"Also known as peanuts, used in cooking and as a source of oil.",['Peanuts'],https://www.who.int/publications/i/item/B09009
+Edible Oil,"Oils derived from various seeds, nuts, and fruits, used for cooking and food preparation.",['Tree Nut'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Iodized Salt,"Salt fortified with iodine, used to prevent iodine deficiency.",['Diabetes'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Herbs,"Plants used for their flavor, fragrance, or medicinal properties.",['Sulphites'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Spices,"Dried seeds, fruits, roots, or bark of plants, used to flavor food.",['Peanuts'],https://www.who.int/publications/i/item/B09009
+Dashmool,"A blend of ten roots used in Ayurvedic medicine, often for detox and rejuvenation.",['Gluten'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Ghrit,"Clarified butter, commonly used in Ayurvedic treatments for its nourishing properties.",['Dairy'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Sharkara,"A type of sugar, used in Ayurvedic formulations for its sweetening and medicinal properties.",['Wheat'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Tugakshii,"Likely refers to a traditional medicinal herb, no specific description available.",['Asthma'],https://www.who.int/publications/i/item/B09009
+Abhralk Bhasma,"An Ayurvedic preparation made from mica, used for strengthening and revitalizing the body.",['Barley'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Mukta Shukti,"Powdered pearls, used in Ayurvedic medicine for their restorative properties.",['Nuts'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Pippali,"Long pepper, used in traditional medicine to improve digestion and circulation.",['Sulphites'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Ashwagandha,An adaptogen used in Ayurveda to reduce stress and improve overall vitality.,['Soy'],https://www.who.int/publications/i/item/B09009
+Shatavari,A herb used to support female reproductive health and balance hormones.,['Peanuts'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Mudgaparni,A medicinal herb in Ayurveda used for various health benefits.,['Wheat'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Mashaparni,A traditional herb used in Ayurveda for healing properties.,['Dairy'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Arkatshringi,"A traditional Ayurvedic herb, often used for its detoxifying and medicinal properties.",['Sulphites'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Tamalaki,"Also known as Amalaki (Indian gooseberry), used in Ayurvedic medicine for its antioxidant properties.",[],https://www.who.int/publications/i/item/B09009
+Draksha,"Grapes, used in traditional medicine for their restorative and nutrient-rich properties.",['Soy'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Vantu,"Likely a medicinal plant, no specific details available.",['Asthma'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Pushkara,A herb used in Ayurvedic medicine for its detoxifying and healing properties.,['Peanuts'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Haritaki,"A herb known for its cleansing and rejuvenating properties, commonly used in Ayurvedic detox.",['Wheat'],https://www.who.int/publications/i/item/B09009
+Guduchi,A medicinal herb used in Ayurveda for boosting immunity and detoxifying the body.,['Tree Nuts'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Karchura,"A plant used in Ayurvedic medicine, no specific description available.",['Barley'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Murta,"Likely a medicinal plant, no specific details available.",[],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Punarnava,"A herb known for its diuretic and anti-inflammatory properties, used in Ayurvedic treatments.",['Dairy'],https://www.who.int/publications/i/item/B09009
+Utpala,A plant used in traditional medicine for detoxification and skin health.,['Gluten'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Vasa,"A herb used in Ayurveda for respiratory health, often in treating coughs and colds.",['Peanuts'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Tashti,"Likely a traditional medicinal plant, no specific description available.",['Asthma'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Kaknasika,"Likely a plant used in traditional medicine, no specific details available.",['Sesame'],https://www.who.int/publications/i/item/B09009
+Kshira,"Milk, often used in Ayurvedic formulations for nourishment and rejuvenation.",['Milk'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Vidari,A root herb used in Ayurvedic medicine for its rejuvenating effects.,['Pollen'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Amla,"Also known as Indian gooseberry, used in Ayurveda for its high vitamin C content and antioxidant properties.",['Gluten'],https://www.who.int/publications/i/item/B09009
+Bludgaparni,"Likely a medicinal herb used in Ayurveda, no specific details available.",['Wheat'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Jvant,"A medicinal plant, no specific details available.",['Tree Nuts'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Guduchi,A herb used in Ayurveda for its immune-boosting and detoxifying properties.,['Peanuts'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Msta,"Likely a plant or herb used in traditional medicine, no specific description available.",['Fish'],https://www.who.int/publications/i/item/B09009
+Yashti,"Licorice root, used in Ayurveda for its soothing properties, especially for the throat.",['Asthma'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Varahi,"Likely a medicinal plant, no specific description available.",['Sulphites'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Shatavar,"Known as Shatavari, used in Ayurvedic medicine to support female reproductive health and balance hormones.",['Dairy'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Amalaki,"Indian gooseberry, known for its high vitamin C content and antioxidant properties.",[],https://www.who.int/publications/i/item/B09009
+Tugakshi,"Likely refers to a traditional medicinal herb, no specific description available.",['Peanuts'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Abhrak,"A traditional Ayurvedic preparation of mica, used for strengthening the body.",['Tree Nuts'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Shukti,A type of shell used in Ayurvedic medicine for its mineral content.,['Barley'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Tvak,"The bark of cinnamon, used in Ayurvedic medicine for its healing and warming properties.",['Sulphites'],https://www.who.int/publications/i/item/B09009
+Sitopaladi,A well-known Ayurvedic formulation used to treat respiratory and digestive issues.,[],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Churna,"A powder made from herbs, used in Ayurvedic treatments for various health issues.",['Wheat'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
+Peanut,"Also known as groundnut, used in cooking and as a source of oil.",['Peanuts'],https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods
+Salt,A mineral used for seasoning and preservation.,[],https://www.who.int/publications/i/item/B09009
+Fiber,"Dietary fiber, essential for digestion and overall health, found in various plant-based foods.",['Peanuts'],https://data.food.gov.uk/catalog/datasets?keyword=allergy
