@@ -18,16 +18,21 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.app.bitesmart.data.userData.parseJsonResponse
 import com.app.bitesmart.navigation.NavigationScreens
+import com.app.bitesmart.viewModels.UserViewModel
 import com.app.bitesmart.widgets.IngredientColumn
 import com.app.bitesmart.widgets.TopAppBarWithTitle
 
@@ -36,8 +41,12 @@ fun IngredientsScreen(
     modifier: Modifier = Modifier,
     navController: NavController,
     responseText: String,
+    userViewModel: UserViewModel
 ) {
-
+    val allergies = remember { mutableStateOf<List<String>>(emptyList()) }
+    LaunchedEffect(key1 = true) {
+        allergies.value = userViewModel.getAllergies()
+    }
     val (ingredientsList, extraDetails) = parseJsonResponse(responseText)
     Scaffold(
         modifier = modifier,
@@ -58,7 +67,8 @@ fun IngredientsScreen(
                 ) {
                     IngredientColumn(
                         modifier = Modifier.weight(3f),
-                        ingredientList = ingredientsList
+                        ingredientList = ingredientsList,
+                        userAllergies = allergies.value
                     )
                     Text(
                         text = "Additional Information:",
@@ -120,6 +130,7 @@ fun IngredientsScreen(
 @Composable
 fun ResponseScreenPreview() {
     val navController = rememberNavController()
+    val userViewModel = UserViewModel(LocalContext.current)
     IngredientsScreen(
         navController = navController,
         responseText = """
@@ -140,6 +151,7 @@ fun ResponseScreenPreview() {
             ],
             "extra_details": "Some additional information"
         }
-        """
+        """,
+        userViewModel = userViewModel
     )
 }

@@ -51,7 +51,7 @@ fun BiteSmartNavigation() {
         ) { backStackEntry ->
             val encodedResponseText = backStackEntry.arguments?.getString("responseText") ?: ""
             val responseText = URLDecoder.decode(encodedResponseText, StandardCharsets.UTF_8.toString())
-            IngredientsScreen(navController = navController, responseText = responseText)
+            IngredientsScreen(navController = navController, responseText = responseText, userViewModel = userViewModel)
         }
         composable(route = NavigationScreens.HistoryDetailsScreen.name) {
             HistoryDetailsScreen(navController = navController)

@@ -12,6 +12,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Circle
 import androidx.compose.material.icons.filled.KeyboardArrowDown
 import androidx.compose.material.icons.filled.KeyboardArrowUp
 import androidx.compose.material3.HorizontalDivider
@@ -38,13 +39,15 @@ import com.app.bitesmart.data.dummyData.getIngredientsData
 @Composable
 fun IngredientColumn(
     modifier: Modifier = Modifier,
-    ingredientList: List<IngredientsData> = getIngredientsData()
+    ingredientList: List<IngredientsData> = getIngredientsData(),
+    userAllergies: List<String> = emptyList()
 ) {
     LazyColumn(
         modifier = modifier
     ) {
         items(ingredientList) { ingredient ->
             var isExpanded by remember { mutableStateOf(false) }
+            val hasAllergy = ingredient.allergies.any { it in userAllergies }
             var allergies = ingredient.allergies
             Surface(
                 modifier = Modifier.padding(top = 8.dp)
@@ -66,20 +69,32 @@ fun IngredientColumn(
                             text = ingredient.name,
                             style = MaterialTheme.typography.titleMedium
                         )
-                        IconButton(
-                            onClick = {
-                                isExpanded = !isExpanded
-                                Log.i("IngredientClicked", ingredient.name)
-                            },
-                            modifier = Modifier
-                                .clip(CircleShape)
-                                .background(Color.White)
-                        ) {
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                            horizontalArrangement = Arrangement.spacedBy(8.dp)
+                        ){
                             Icon(
-                                imageVector = if(isExpanded) Icons.Default.KeyboardArrowUp else Icons.Default.KeyboardArrowDown,
-                                contentDescription = "Arrow Down button"
+                                imageVector = Icons.Filled.Circle,
+                                contentDescription = "indicator",
+                                tint = if (hasAllergy) Color(0xFFD94C4C) else MaterialTheme.colorScheme.primaryContainer
                             )
+                            IconButton(
+                                onClick = {
+                                    isExpanded = !isExpanded
+                                    Log.i("IngredientClicked", ingredient.name)
+                                },
+                                modifier = Modifier
+                                    .clip(CircleShape)
+                                    .background(Color.White)
+                            ) {
+                                Icon(
+                                    imageVector = if(isExpanded) Icons.Default.KeyboardArrowUp else Icons.Default.KeyboardArrowDown,
+                                    contentDescription = "Arrow Down button"
+                                )
+
+                            }
                         }
+
                     }
                     if (isExpanded) {
                     HorizontalDivider(modifier = Modifier.padding(4.dp))
