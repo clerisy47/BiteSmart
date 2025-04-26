@@ -34,6 +34,11 @@ With a simple scan, users can instantly see **ingredient details, potential alle
 ✅ **SDG 12: Responsible Consumption** – Encouraging healthier, sustainable food choices  
 ✅ **SDG 9: Industry & Innovation** – Using AI to enhance transparency in food labeling  
 
+## Security and Risk Management 📚
+You can view our detailed Security and Risk Management document [here](Security_and_Risk_Management).
+
+
+
 ## Contributing 🤝  
 We welcome contributions! Feel free to **fork this repository**, create a **new branch**, and submit a **pull request**.  
 
